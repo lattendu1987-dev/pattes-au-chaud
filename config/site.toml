@@ -1,26 +1,26 @@
-# Contenu du site de guides d'achat (affiliation Amazon.ca).
+# Contenu du site de guides d'achat (affiliation Amazon.fr).
 # Règles éditoriales :
 # - Aucun faux avis, aucun « testé par nous » : nous expliquons des critères de choix.
-# - Aucun prix affiché (le contrat Amazon l'interdit hors API officielle) : « Voir les prix sur Amazon.ca ».
+# - Aucun prix affiché (le contrat Amazon l'interdit hors API officielle) : « Voir les prix sur Amazon.fr ».
 # - Aucune image de produit Amazon copiée.
 # - Divulgation d'affiliation visible sur chaque page (Bureau de la concurrence, contrat Amazon).
 
 [site]
 name = "Pattes au chaud"
-tagline = "Guides d'achat pour les animaux d'ici, pensés pour l'hiver québécois."
+tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait froid."
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
-# Identifiant Partenaires Amazon.ca (ex. "pattesauchaud-20"). Vide = liens sans commission.
+# Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = ""
 updated = "2026-10-20"
 
 [[guide]]
 slug = "bottes-chien-hiver"
 icon = "🥾"
-title = "Bottes pour chien : bien choisir pour l'hiver québécois"
-description = "Sel de déglaçage, abrasifs, froid : comment choisir des bottes que votre chien gardera vraiment."
-intro = "Entre le sel de déglaçage, les abrasifs et le froid, les coussinets en prennent un coup de novembre à avril. Une bonne paire de bottes règle une bonne partie du problème, à condition de choisir la bonne taille et le bon type."
+title = "Bottes pour chien : bien choisir pour l'hiver"
+description = "Sel de déneigement, gravillons, froid : comment choisir des bottes que votre chien gardera vraiment."
+intro = "Entre le sel de déneigement, les gravillons et le froid, les coussinets souffrent pendant l'hiver, surtout en montagne et dans l'Est. Une bonne paire de bottes règle une bonne partie du problème, à condition de choisir la bonne taille et le bon type."
 sections = [
-  { h = "Pourquoi protéger les pattes", p = ["Les sels et abrasifs étendus sur les trottoirs peuvent irriter ou assécher les coussinets, et le chien en lèche souvent les résidus en rentrant. Chez les chiens à poils longs, la neige forme aussi des boules entre les doigts."] },
+  { h = "Pourquoi protéger les pattes", p = ["Le sel et les gravillons étendus sur les trottoirs peuvent irriter ou assécher les coussinets, et le chien en lèche souvent les résidus en rentrant. Chez les chiens à poils longs, la neige forme aussi des boules entre les doigts."] },
   { h = "Les critères qui comptent", bullets = [
       "Semelle antidérapante et assez souple pour que le chien sente le sol.",
       "Fermeture à la cheville bien serrée (velcro large), idéalement réfléchissante pour les fins de journée sombres.",
@@ -72,7 +72,7 @@ sections = [
 picks = [
   { label = "Manteaux imperméables doublés", why = "Le bon point de départ pour la plupart des chiens.", query = "manteau hiver chien imperméable doublé" },
   { label = "Manteaux qui couvrent le ventre", why = "Pour les petits chiens qui touchent la neige.", query = "manteau chien couvre ventre hiver" },
-  { label = "Manteaux réfléchissants", why = "Pour les promenades à la noirceur.", query = "manteau chien réfléchissant hiver" },
+  { label = "Manteaux réfléchissants", why = "Pour les promenades à la tombée de la nuit.", query = "manteau chien réfléchissant hiver" },
 ]
 faq = [
   { q = "Le manteau doit-il être serré ?", a = "Ajusté, sans gêner les mouvements : vous devez pouvoir glisser deux doigts sous les sangles." },
@@ -81,7 +81,7 @@ faq = [
 [[guide]]
 slug = "chauffe-mains-rechargeables"
 icon = "🔥"
-title = "Chauffe-mains rechargeables : les bons critères pour les promenades à -20"
+title = "Chauffe-mains rechargeables : les bons critères pour les promenades par grand froid"
 description = "Autonomie, format, recharge et sécurité : comment comparer les chauffe-mains électriques."
 intro = "Tenir une laisse par grand froid, c'est souvent les mains qui lâchent en premier. Les chauffe-mains rechargeables remplacent les chaufferettes jetables, à condition de bien comparer."
 sections = [
@@ -102,7 +102,7 @@ sections = [
 picks = [
   { label = "Paires magnétiques rechargeables", why = "Une pour chaque main, pratiques en promenade.", query = "chauffe mains rechargeable paire magnétique" },
   { label = "Modèles USB-C avec batterie externe", why = "Un seul câble pour tout recharger.", query = "chauffe mains rechargeable usb-c batterie externe" },
-  { label = "Mitaines pour tenir la laisse", why = "Le complément idéal aux chauffe-mains.", query = "mitaines hiver chaudes tactiles" },
+  { label = "Gants chauds pour tenir la laisse", why = "Le complément idéal aux chauffe-mains.", query = "gants hiver chauds tactiles" },
 ]
 faq = [
   { q = "Combien de temps dure une charge ?", a = "Cela dépend du modèle et du niveau de chaleur. Fiez-vous à l'autonomie au niveau le plus bas indiquée par le fabricant, et prévoyez moins par grand froid." },
@@ -152,8 +152,8 @@ picks = [
   { label = "Tapis de fouille et jouets d'occupation", why = "Pour occuper les journées d'hiver à l'intérieur.", query = "tapis de fouille chien" },
   { label = "Lit orthopédique", why = "Pour les chiens âgés ou de grande taille.", query = "lit orthopédique chien" },
   { label = "Fontaine à eau pour chat", why = "Beaucoup de chats boivent plus volontiers une eau qui coule.", query = "fontaine à eau chat" },
-  { label = "Couverture de canapé lavable", why = "Protège le divan et passe à la machine.", query = "couverture canapé imperméable animaux" },
+  { label = "Couverture de canapé lavable", why = "Protège le canapé et passe à la machine.", query = "couverture canapé imperméable animaux" },
 ]
 faq = [
-  { q = "Les cadeaux arriveront-ils avant Noël ?", a = "Les délais dépendent du vendeur. La date estimée est affichée sur Amazon.ca avant la commande : vérifiez-la." },
+  { q = "Les cadeaux arriveront-ils avant Noël ?", a = "Les délais dépendent du vendeur. La date estimée est affichée sur Amazon.fr avant la commande : vérifiez-la." },
 ]

@@ -4,7 +4,7 @@ Hypothèses (à remplacer par les données réelles du tableau de bord Amazon d�
 - taux de clic vers Amazon depuis un guide : 10-20 % ;
 - taux d'achat sur Amazon après le clic : 5-10 % (hypothèse, aucune donnée officielle) ;
 - Amazon rémunère tout le panier acheté dans les 24 h suivant le clic ;
-- commission catégorie animaux : environ 3 % selon les sources tierces 2026 (non confirmé officiellement).
+- commission « Animalerie » Amazon.fr : 3 % (barème juin 2025, à confirmer dans l'espace Partenaires).
 """
 
 from __future__ import annotations
@@ -53,5 +53,5 @@ def table_md() -> str:
     for s in default_scenarios():
         r = run(s)
         rows.append(f"| {s.name} | {s.monthly_visits:,} | {r.clicks:,.0f} | {r.orders:,.0f} | "
-                    f"{r.sales:,.0f} $ | **{r.commission:,.0f} $** |".replace(",", " "))
+                    f"{r.sales:,.0f} € | **{r.commission:,.0f} €** |".replace(",", " "))
     return "\n".join(rows)

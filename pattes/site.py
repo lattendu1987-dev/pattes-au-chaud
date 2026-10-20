@@ -1,7 +1,7 @@
-"""Générateur du site statique de guides d'achat (affiliation Amazon.ca).
+"""Générateur du site statique de guides d'achat (affiliation Amazon.fr).
 
 `python -m pattes site` écrit le site dans public/ à partir de config/site.toml.
-Aucun témoin, aucun outil de mesure tiers : rien à faire consentir (Loi 25).
+Aucun cookie, aucun outil de mesure tiers : pas de bannière de consentement nécessaire (RGPD).
 """
 
 from __future__ import annotations
@@ -15,8 +15,8 @@ from . import config
 
 ASSETS = Path(__file__).resolve().parent / "site_assets"
 DISCLOSURE = (
-    "En tant que Partenaire Amazon, nous touchons une commission sur les achats admissibles "
-    "faits par nos liens, sans frais supplémentaires pour vous. Nous n'avons pas testé "
+    "En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions "
+    "requises, sans frais supplémentaires pour vous. Nous n'avons pas testé "
     "chaque produit : nos guides expliquent les critères à vérifier."
 )
 
@@ -26,7 +26,7 @@ def e(s: str) -> str:
 
 
 def amazon_url(query: str, tag: str) -> str:
-    url = f"https://www.amazon.ca/s?k={quote_plus(query)}"
+    url = f"https://www.amazon.fr/s?k={quote_plus(query)}"
     return f"{url}&tag={quote_plus(tag)}" if tag else url
 
 
@@ -34,7 +34,7 @@ def page(site: dict, title: str, description: str, body: str, path: str) -> str:
     full_title = title if title == site["name"] else f"{title} · {site['name']}"
     canonical = site["base_url"].rstrip("/") + "/" + ("" if path == "index.html" else path)
     return f"""<!doctype html>
-<html lang="fr-CA">
+<html lang="fr-FR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,7 @@ def page(site: dict, title: str, description: str, body: str, path: str) -> str:
 <meta property="og:title" content="{e(full_title)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fr_CA">
+<meta property="og:locale" content="fr_FR">
 <meta name="theme-color" content="#14243a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
 <link rel="stylesheet" href="style.css">
@@ -62,8 +62,8 @@ def page(site: dict, title: str, description: str, body: str, path: str) -> str:
 </main>
 <footer class="foot">
   <p><strong>{e(site['name'])}</strong> — {e(site['tagline'])}</p>
-  <p><a href="divulgation.html">Divulgation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="a-propos.html">À propos</a></p>
-  <p class="muted">Mis à jour le {e(site['updated'])}. Amazon, Amazon.ca et le logo Amazon sont des marques de commerce d'Amazon.com, Inc. ou de ses sociétés affiliées.</p>
+  <p><a href="divulgation.html">Divulgation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="a-propos.html">À propos</a></p>
+  <p class="muted">Mis à jour le {e(site['updated'])}. Amazon et le logo Amazon sont des marques d'Amazon.com, Inc. ou de ses filiales.</p>
 </footer>
 <script src="app.js" defer></script>
 </body>
@@ -98,9 +98,9 @@ def index_body(site: dict, guides: list[dict]) -> str:
 <section class="section promise reveal">
   <h2>Notre façon de faire</h2>
   <ul class="checks">
-    <li>Nous expliquons <strong>quoi vérifier</strong> avant d'acheter, selon la réalité de l'hiver québécois.</li>
+    <li>Nous expliquons <strong>quoi vérifier</strong> avant d'acheter, selon vos besoins réels.</li>
     <li>Nous n'inventons <strong>ni avis ni tests</strong>.</li>
-    <li>Nous n'affichons <strong>pas de prix</strong> qui pourraient être périmés : vous les voyez à jour sur Amazon.ca.</li>
+    <li>Nous n'affichons <strong>pas de prix</strong> qui pourraient être périmés : vous les voyez à jour sur Amazon.fr.</li>
   </ul>
 </section>"""
 
@@ -121,11 +121,11 @@ def guide_body(g: dict, tag: str) -> str:
         parts.append("</section>")
     picks = "".join(
         f"""<li class="pick reveal"><div><h3>{e(p['label'])}</h3><p>{e(p['why'])}</p></div>
-<a class="btn btn-small" href="{e(amazon_url(p['query'], tag))}" rel="sponsored nofollow noopener" target="_blank">Voir les prix sur Amazon.ca</a></li>"""
+<a class="btn btn-small" href="{e(amazon_url(p['query'], tag))}" rel="sponsored nofollow noopener" target="_blank">Voir les prix sur Amazon.fr</a></li>"""
         for p in g.get("picks", [])
     )
     parts.append(f'<section class="block"><h2 class="reveal">Où chercher</h2><ul class="picks">{picks}</ul>'
-                 f'<p class="muted small">Liens d\'affiliation. Les prix et la disponibilité changent : vérifiez-les sur Amazon.ca.</p></section>')
+                 f'<p class="muted small">Liens d\'affiliation. Les prix et la disponibilité changent : vérifiez-les sur Amazon.fr.</p></section>')
     if g.get("faq"):
         faq = "".join(f"<details class=\"reveal\"><summary>{e(f['q'])}</summary><p>{e(f['a'])}</p></details>" for f in g["faq"])
         parts.append(f'<section class="block"><h2 class="reveal">Questions fréquentes</h2>{faq}</section>')
@@ -136,7 +136,7 @@ def guide_body(g: dict, tag: str) -> str:
 STATIC_PAGES = {
     "divulgation.html": ("Divulgation", "Comment ce site est financé.", """<article class="guide prose">
 <h1>Divulgation</h1>
-<p>Ce site participe au Programme Partenaires d'Amazon.ca, un programme d'affiliation qui permet de toucher une commission en créant des liens vers Amazon.ca.</p>
+<p>Ce site participe au Programme Partenaires d'Amazon EU, un programme d'affiliation conçu pour permettre à des sites de percevoir une rémunération grâce à la création de liens vers Amazon.fr.</p>
 <p>Quand vous achetez après avoir cliqué sur l'un de nos liens, nous pouvons recevoir une commission. Le prix que vous payez ne change pas.</p>
 <p>Nous ne recevons ni produits gratuits ni paiements de marques. Nos guides présentent des critères de choix ; ils ne prétendent pas avoir testé chaque produit.</p>
 </article>"""),
@@ -144,20 +144,30 @@ STATIC_PAGES = {
 <h1>Politique de confidentialité</h1>
 <p><strong>En bref : ce site ne recueille aucun renseignement personnel.</strong></p>
 <h2>Ce que nous ne faisons pas</h2>
-<ul class="checks"><li>Aucun formulaire, aucun compte, aucune infolettre.</li><li>Aucun témoin (cookie) ni outil de mesure d'audience déposé par ce site.</li><li>Aucune publicité ciblée.</li></ul>
+<ul class="checks"><li>Aucun formulaire, aucun compte, aucune newsletter.</li><li>Aucun cookie ni outil de mesure d'audience déposé par ce site.</li><li>Aucune publicité ciblée.</li></ul>
 <h2>Hébergement</h2>
 <p>Le site est hébergé par GitHub Pages (GitHub, Inc.), qui peut traiter des données techniques comme l'adresse IP pour assurer la sécurité du service, selon sa propre politique de confidentialité.</p>
-<h2>Liens vers Amazon.ca</h2>
-<p>Quand vous cliquez sur un lien vers Amazon.ca, vous quittez ce site. Amazon peut alors utiliser des témoins, notamment pour attribuer la commission, selon sa propre politique de confidentialité.</p>
+<h2>Liens vers Amazon.fr</h2>
+<p>Quand vous cliquez sur un lien vers Amazon.fr, vous quittez ce site. Amazon peut alors utiliser des cookies, notamment pour attribuer la commission, selon sa propre politique de confidentialité.</p>
 <h2>Questions</h2>
 <p>Pour toute question sur la protection des renseignements personnels, ouvrez une demande sur la <a href="https://github.com/lattendu1987-dev/pattes-au-chaud/issues">page du projet</a>.</p>
 </article>"""),
     "a-propos.html": ("À propos", "Qui sommes-nous et comment nos guides sont faits.", """<article class="guide prose">
 <h1>À propos</h1>
-<p>Pattes au chaud publie des guides d'achat pour les propriétaires d'animaux au Québec, avec une attention particulière à l'hiver : froid intense, sel de déglaçage, jours courts.</p>
+<p>Pattes au chaud publie des guides d'achat pour les propriétaires d'animaux, avec une attention particulière à l'hiver : froid, sel de déneigement, jours courts.</p>
 <h2>Comment nos guides sont faits</h2>
-<ul class="checks"><li>Nous partons des besoins concrets (protéger les coussinets, garder un petit chien au chaud, gérer les poils).</li><li>Nous listons les critères vérifiables : matériaux, mesures, fermetures, autonomie, consignes de sécurité.</li><li>Nous renvoyons vers une recherche Amazon.ca pour comparer les offres à jour.</li></ul>
+<ul class="checks"><li>Nous partons des besoins concrets (protéger les coussinets, garder un petit chien au chaud, gérer les poils).</li><li>Nous listons les critères vérifiables : matériaux, mesures, fermetures, autonomie, consignes de sécurité.</li><li>Nous renvoyons vers une recherche Amazon.fr pour comparer les offres à jour.</li></ul>
 <p>Nous ne publions ni avis inventés ni classements payés.</p>
+</article>"""),
+    "mentions-legales.html": ("Mentions légales", "Éditeur et hébergeur du site.", """<article class="guide prose">
+<h1>Mentions légales</h1>
+<h2>Éditeur</h2>
+<p>Site édité par un particulier. Conformément à la loi pour la confiance dans l'économie numérique (LCEN), ses coordonnées ont été communiquées à l'hébergeur.</p>
+<p>Contact : via la <a href="https://github.com/lattendu1987-dev/pattes-au-chaud/issues">page du projet</a>.</p>
+<h2>Hébergeur</h2>
+<p>GitHub, Inc. (service GitHub Pages) — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis — github.com</p>
+<h2>Affiliation</h2>
+<p>En tant que Partenaire Amazon, l'éditeur réalise un bénéfice sur les achats remplissant les conditions requises. Voir la page <a href="divulgation.html">Divulgation</a>.</p>
 </article>"""),
     "404.html": ("Page introuvable", "Cette page n'existe pas.", """<section class="hero small"><h1>Oups, cette page s'est perdue dans la neige.</h1><a class="btn" href="./">Retour à l'accueil</a></section>"""),
 }

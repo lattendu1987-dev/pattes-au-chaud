@@ -1,6 +1,6 @@
 # Pattes au chaud
 
-Guides d'achat pour les propriétaires d'animaux au Québec, avec liens d'affiliation Amazon.ca.
+Guides d'achat pour les propriétaires d'animaux, avec liens d'affiliation Amazon.fr.
 
 - **Site** : https://lattendu1987-dev.github.io/pattes-au-chaud/
 - **Plan** : [`docs/PLAN.md`](docs/PLAN.md)

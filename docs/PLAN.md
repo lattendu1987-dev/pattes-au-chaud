@@ -1,63 +1,58 @@
-# Plan retenu : affiliation, 0 $, sans entreprise
+# Plan : affiliation Amazon.fr, 0 €, sans entreprise
 
-*20 octobre 2026.*
+*20 octobre 2026. Vous habitez en France ; le site vise le public français.*
 
-## Pourquoi ce modèle
+## Le modèle
 
-Contraintes : Québec/Canada, budget 0 $, pas d'entreprise, rôle d'intermédiaire seulement.
+Vous recommandez, Amazon vend. Pas de stock, pas de paiement à encaisser, pas de service client, pas de données clients.
+Le site **Pattes au chaud** publie des guides d'achat pour les animaux. Chaque achat fait sur Amazon.fr après un clic sur nos liens rapporte une commission.
 
-| Modèle | Coût de départ | Entreprise / comptes | Verdict |
-|---|---|---|---|
-| Boutique (livraison directe par le fournisseur) | ≈ 675 $ minimum | Shopify, fournisseurs, paiements, Loi 25 sur les adresses clients | ❌ Hors budget |
-| Impression à la demande sur Etsy | Frais de mise en vente et de création de boutique | Boutique, service client | ❌ Pas 0 $ et pas un simple rôle d'intermédiaire |
-| Affiliation TikTok Shop | 0 $ | — | ❌ TikTok Shop n'est pas officiellement lancé au Canada ([Atlantic Works](https://atlanticworks.ca/blog/tiktok-shop-canada)) |
-| **Affiliation Amazon.ca + site de guides** | **0 $** | **1 compte personnel (Partenaires Amazon.ca)** | ✅ **Retenu** |
+- Site : https://lattendu1987-dev.github.io/pattes-au-chaud/
+- Coût : 0 € (hébergement GitHub Pages gratuit)
+- Commission « Animalerie » : **3 %** selon le barème Amazon.fr publié en juin 2025 ([Leptidigital](https://www.leptidigital.fr/e-commerce/affiliation-amazon-modification-taux-affiliation-77438/)) ; à vérifier dans votre espace Partenaires, qui fait foi. Amazon rémunère tout le panier acheté dans les 24 h suivant le clic.
 
-Avec l'affiliation, **vous recommandez, Amazon vend.** Pas de stock, pas de paiement à encaisser, pas de service après-vente, pas d'adresses de clients à gérer.
+## Déjà fait
 
-## Ce qui est déjà fait
+- 5 guides : bottes pour chien, manteau d'hiver, chauffe-mains rechargeables, poils d'animaux, cadeaux de Noël.
+- Mention d'affiliation exigée par Amazon sur chaque page, liens marqués « sponsorisés », aucun prix affiché (interdit par Amazon hors API officielle), aucun faux avis.
+- Aucun cookie déposé par le site : pas de bannière de consentement nécessaire.
+- Mentions légales (éditeur particulier, hébergeur GitHub), confidentialité, divulgation.
+- Republication automatique à chaque mise à jour.
 
-- Site **Pattes au chaud** : 5 guides d'achat pour propriétaires d'animaux au Québec, axés sur l'hiver (bottes, manteaux, chauffe-mains, poils, cadeaux de Noël). Conçu d'abord pour le téléphone, avec mode sombre et animations légères.
-- Conformité intégrée : divulgation d'affiliation sur chaque page, liens marqués « sponsorisés », aucun prix affiché (le contrat Amazon l'interdit hors API officielle), aucun faux avis, aucun témoin ni outil de mesure (rien à faire consentir pour la Loi 25).
-- Hébergement gratuit : GitHub Pages, dans un dépôt dédié, republié automatiquement à chaque mise à jour.
-- Tests automatiques (21) : pages présentes, divulgation partout, liens marqués, aucun prix affiché.
+## Ce que vous devez faire
 
-## Ce que vous devez faire (environ 10 minutes)
+1. Dans le **navigateur** (pas l'application Amazon), allez sur **https://partenaires.amazon.fr** et connectez-vous avec votre compte Amazon habituel.
+2. Site web à déclarer : `https://lattendu1987-dev.github.io/pattes-au-chaud/`
+3. Choisissez un identifiant (ex. `pattesauchaud`) ; Amazon y ajoute « -21 ».
+4. Renseignez les informations fiscales et votre IBAN pour être payé (vous pouvez le faire un peu plus tard).
+5. Envoyez-moi l'identifiant (ex. `pattesauchaud-21`). Ce n'est pas un secret : il apparaît dans tous les liens.
 
-1. **S'inscrire aux Partenaires Amazon.ca** (associates.amazon.ca) avec l'adresse du site : `https://lattendu1987-dev.github.io/pattes-au-chaud/`. Inscription à votre nom, avec votre compte bancaire personnel et l'entrevue fiscale (NAS). **M'envoyer ensuite l'identifiant de suivi** (ex. `pattesauchaud-20`). Ce n'est pas un secret : il apparaît dans tous les liens.
+> ⚠️ Amazon demande des ventes réelles dans les **180 jours** suivant l'inscription, sinon le compte est fermé. Vos propres achats ne comptent pas.
 
-> ⚠️ Amazon exige **3 ventes dans les 180 jours** suivant l'inscription, sinon le compte est fermé ([Amazon.ca](https://associates.amazon.ca/help/node/topic/G7MJTPEP9NC3YKMG)). Vos propres achats ne comptent pas. Inscrivez-vous seulement quand le site est en ligne : la saison des fêtes est le meilleur moment.
+## Statut et impôts (France)
 
-## Statut légal et fiscal (simple)
-
-- **Pas d'immatriculation au REQ** si vous exercez sous votre prénom et nom complets.
-- **Impôts** : les commissions sont des revenus d'entreprise à déclarer dans votre déclaration personnelle (fédéral : T2125 ; Québec : annexe L et TP-80) ([QuickBooks](https://quickbooks.intuit.com/fr-ca/ressources/taxes/comment-declarer-des-revenus-de-travailleur-autonome-au-canada/)). Gardez les relevés de paiement d'Amazon.
-- **TPS/TVQ** : rien à faire sous 30 000 $ de revenus sur 4 trimestres.
-- **Divulgation** : obligatoire sur le site **et** dans chaque publication sur les réseaux sociaux (ex. « #affilié — je touche une commission ») ([BLG](https://www.blg.com/fr/insights/2025/07/trust-me-im-an-influencer-an-overview-of-influencer-marketing-in-canada)).
+- **Pas besoin de créer une entreprise pour s'inscrire** chez Amazon.
+- Les commissions sont **imposables et doivent être déclarées**. Pour de petits montants occasionnels, elles sont en général classées en *bénéfices non commerciaux non professionnels* (déclaration 2042-C-PRO). Les sources ne sont pas unanimes ([Que Choisir](https://forum.quechoisir.org/post1300104.html)) : confirmez auprès de votre centre des impôts (messagerie sécurisée sur impots.gouv.fr).
+- Si l'activité devient régulière, la **micro-entreprise** (inscription gratuite en ligne) devient la bonne solution. Nous y penserons quand il y aura des revenus réguliers.
+- **Mentions légales** : en tant que particulier, vous pouvez rester anonyme sur le site, à condition d'avoir donné votre identité à l'hébergeur ([Simonnet Avocat](https://www.simonnetavocat.fr/mentions-legales-dun-site-internet-obligations-sanctions-et-modele/)). Votre compte GitHub remplit ce rôle. Si l'activité devient professionnelle, il faudra afficher votre nom et votre adresse.
 
 ## Revenus attendus (honnêtement)
 
-Commission « animaux » ≈ 3 % selon des sources tierces 2026, non confirmé par Amazon ([AffiliateX](https://affiliatexblocks.com/amazon-affiliate-commission-rates/)). Amazon rémunère tout le panier acheté dans les 24 h suivant le clic.
-
-| Scénario | Visites/mois | Achats | **Commission/mois** |
+| Scénario | Visites/mois | Achats | Commission/mois |
 |---|---|---|---|
-| Démarrage (mois 1-3) | 500 | ≈ 4 | **≈ 7 $** |
-| Croissance (mois 4-9) | 5 000 | ≈ 52 | **≈ 110 $** |
-| Établi (12 mois et plus) | 30 000 | ≈ 360 | **≈ 756 $** |
+| Démarrage (mois 1-3) | 500 | ≈ 4 | ≈ 7 € |
+| Croissance (mois 4-9) | 5 000 | ≈ 52 | ≈ 110 € |
+| Établi (12 mois et plus) | 30 000 | ≈ 360 | ≈ 750 € |
 
-Hypothèses : 15 % des visiteurs cliquent vers Amazon, 6 à 8 % de ceux-là achètent, panier de 55 à 60 $. Calcul : `python -m pdi affiliation`. **Le seul vrai levier, c'est le trafic.**
+Hypothèses : 15 % des visiteurs cliquent vers Amazon, 6 à 8 % de ceux-là achètent, panier moyen de 55 à 60 €. Calcul : `python -m pattes affiliation`. **Le seul vrai levier, c'est le trafic.**
 
-## Comment attirer du trafic à 0 $
+## Attirer du trafic à 0 €
 
-| Canal | Effort pour vous | Ce que je fais | Délai |
+| Canal | Pour vous | Ce que je fais | Délai |
 |---|---|---|---|
-| Référencement Google (guides en français, sujets québécois) | Aucun | Je rédige et publie de nouveaux guides chaque semaine | 3 à 6 mois |
-| Pinterest (épingles vers les guides) | Créer un compte gratuit | J'écris les titres et descriptions des épingles et je prépare les visuels | 1 à 3 mois |
-| Groupes Facebook québécois d'animaux | Publier vous-même, en respectant les règles des groupes | J'écris des réponses utiles, avec divulgation | Immédiat |
-| Vidéos courtes (Reels, Shorts) | Filmer 30 s avec votre téléphone (votre animal, si vous en avez un) | J'écris les scripts | 1 à 2 mois |
+| Google | Rien | 2 nouveaux guides par semaine | 3 à 6 mois |
+| Pinterest | Créer un compte gratuit | Titres, descriptions, visuels des épingles | 1 à 3 mois |
+| Groupes Facebook d'animaux | Publier vous-même, selon les règles des groupes | Messages utiles avec la mention d'affiliation | Immédiat |
+| Vidéos courtes (Reels, Shorts) | Filmer 30 s avec votre téléphone | Scripts | 1 à 2 mois |
 
-## Étapes suivantes
-
-1. Vous : inscription aux Partenaires Amazon.ca → me donner l'identifiant.
-2. Moi : ajouter l'identifiant au site, publier 2 nouveaux guides par semaine jusqu'à Noël, préparer les épingles Pinterest et les messages pour les groupes.
-3. Quand les commissions couvrent un budget, envisager une boutique avec les produits qui ont fait cliquer le plus.
+Mention obligatoire sur les réseaux : indiquer clairement le lien commercial, par exemple « #affiliation — je touche une commission ».

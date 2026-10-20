@@ -17,7 +17,7 @@ class SiteTest(unittest.TestCase):
         for g in self.guides:
             self.assertTrue((self.out / f"{g['slug']}.html").exists())
         for name in ["index.html", "divulgation.html", "confidentialite.html", "a-propos.html",
-                     "404.html", "sitemap.xml", "robots.txt", "style.css", "app.js"]:
+                     "404.html", "mentions-legales.html", "sitemap.xml", "robots.txt", "style.css", "app.js"]:
             self.assertTrue((self.out / name).exists(), name)
 
     def test_disclosure_on_every_page(self):
@@ -26,22 +26,22 @@ class SiteTest(unittest.TestCase):
 
     def test_affiliate_links_are_marked_sponsored(self):
         html = (self.out / f"{self.guides[0]['slug']}.html").read_text(encoding="utf-8")
-        self.assertIn("amazon.ca/s?k=", html)
+        self.assertIn("amazon.fr/s?k=", html)
         self.assertIn('rel="sponsored nofollow noopener"', html)
 
     def test_no_prices_shown(self):
         # Le contrat Amazon interdit d'afficher des prix hors API officielle.
         for page in self.out.glob("*.html"):
             text = page.read_text(encoding="utf-8")
-            self.assertNotRegex(text, r"\d+[,.]\d{2}\s?\$", page.name)
+            self.assertNotRegex(text, r"\d+[,.]\d{2}\s?[$€]", page.name)
 
 
 class AmazonUrlTest(unittest.TestCase):
     def test_tag_added(self):
-        self.assertEqual(amazon_url("bottes chien", "abc-20"), "https://www.amazon.ca/s?k=bottes+chien&tag=abc-20")
+        self.assertEqual(amazon_url("bottes chien", "abc-21"), "https://www.amazon.fr/s?k=bottes+chien&tag=abc-21")
 
     def test_no_tag(self):
-        self.assertEqual(amazon_url("bottes chien", ""), "https://www.amazon.ca/s?k=bottes+chien")
+        self.assertEqual(amazon_url("bottes chien", ""), "https://www.amazon.fr/s?k=bottes+chien")
 
 
 class AffiliateTest(unittest.TestCase):
