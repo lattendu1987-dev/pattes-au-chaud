@@ -197,6 +197,7 @@ def kit_page(site: dict, guides: list[dict]) -> str:
     )
     body = f"""<article class="guide"><h1>Kit de partage</h1>
 <p class="lead">Page de travail, non référencée. Pinterest : enregistrez l'image, puis créez une épingle avec le titre, la description et le lien. Facebook : copiez un message et publiez-le dans un groupe qui accepte ce type de partage.</p>
+<h2>Photo de profil</h2><section class="kit reveal"><img src="logo.png" alt="Logo Pattes au chaud" width="800" height="800" style="max-width:240px"><p><a class="btn btn-small" href="logo.png" download>Enregistrer le logo</a></p></section>
 <h2>Messages Facebook</h2>{posts}
 <h2>Épingles Pinterest</h2>{"".join(pins)}</article>
 <script>document.querySelectorAll('.copy button').forEach(function(b){{b.addEventListener('click',function(){{
