@@ -30,7 +30,7 @@ def amazon_url(query: str, tag: str) -> str:
     return f"{url}&tag={quote_plus(tag)}" if tag else url
 
 
-def page(site: dict, title: str, description: str, body: str, path: str) -> str:
+def page(site: dict, title: str, description: str, body: str, path: str, image: str = "bottes-chien-hiver") -> str:
     full_title = title if title == site["name"] else f"{title} · {site['name']}"
     canonical = site["base_url"].rstrip("/") + "/" + ("" if path == "index.html" else path)
     return f"""<!doctype html>
@@ -44,6 +44,11 @@ def page(site: dict, title: str, description: str, body: str, path: str) -> str:
 <meta property="og:title" content="{e(full_title)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website">
+<meta property="og:url" content="{e(canonical)}">
+<meta property="og:image" content="{e(site['base_url'].rstrip('/') + '/pins/' + image + '.png')}">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="1500">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="fr_FR">
 <meta name="theme-color" content="#14243a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
@@ -219,7 +224,7 @@ def build(out_dir: Path | None = None) -> Path:
     (out / "index.html").write_text(page(site, site["name"], site["tagline"], index_body(site, guides), "index.html"), encoding="utf-8")
     for g in guides:
         name = f"{g['slug']}.html"
-        (out / name).write_text(page(site, g["title"], g["description"], guide_body(g, tag), name), encoding="utf-8")
+        (out / name).write_text(page(site, g["title"], g["description"], guide_body(g, tag), name, image=g["slug"]), encoding="utf-8")
     for name, (title, desc, body) in STATIC_PAGES.items():
         (out / name).write_text(page(site, title, desc, body, name), encoding="utf-8")
 
