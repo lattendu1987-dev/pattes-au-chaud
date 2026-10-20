@@ -13,3 +13,9 @@ python -m unittest discover -s tests -t .
 ```
 
 Chaque mise à jour de `main` régénère le site et le publie sur la branche `gh-pages`.
+
+## Promotion
+
+- Kit de partage (non référencé) : https://lattendu1987-dev.github.io/pattes-au-chaud/kit-partage.html
+- Messages Facebook : `config/promo.toml`
+- Images Pinterest : `python tools/make_pins.py` (régénère `static/pins/`, nécessite Chrome/Chromium)

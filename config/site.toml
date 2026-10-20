@@ -157,3 +157,64 @@ picks = [
 faq = [
   { q = "Les cadeaux arriveront-ils avant Noël ?", a = "Les délais dépendent du vendeur. La date estimée est affichée sur Amazon.fr avant la commande : vérifiez-la." },
 ]
+
+[[guide]]
+slug = "coussin-chauffant-chat-chien"
+icon = "🛏️"
+title = "Coussin chauffant pour chat ou chien : bien choisir et l'utiliser sans risque"
+description = "Électrique ou auto-chauffant, puissance, sécurité du câble : les points à vérifier avant d'acheter."
+intro = "Les chats âgés, les petits chiens et les animaux qui dorment près d'une fenêtre apprécient une couche plus chaude en hiver. Il existe deux grandes familles de coussins : électriques et auto-chauffants. Voici comment choisir."
+sections = [
+  { h = "Électrique ou auto-chauffant ?", bullets = [
+      "Auto-chauffant (sans électricité) : une couche isolante renvoie la chaleur du corps de l'animal. Aucun câble, aucun risque électrique : le meilleur choix pour commencer.",
+      "Électrique : chaleur plus marquée, utile pour un animal âgé, malade ou une pièce froide. Il demande plus de précautions.",
+  ] },
+  { h = "Les critères qui comptent (modèles électriques)", bullets = [
+      "Faible puissance et chaleur modérée, proche de la température corporelle de l'animal.",
+      "Arrêt automatique ou thermostat, pour éviter la surchauffe.",
+      "Câble protégé par une gaine résistante aux morsures, surtout avec un chiot ou un chaton.",
+      "Marquage CE et notice en français.",
+      "Housse amovible et lavable.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Laissez toujours à l'animal un espace non chauffé à côté, pour qu'il puisse s'éloigner s'il a trop chaud.",
+      "Vérifiez régulièrement le câble et ne l'utilisez pas s'il est abîmé.",
+      "Demandez conseil à votre vétérinaire pour un animal très jeune, très âgé ou qui ne peut pas se déplacer seul.",
+  ] },
+]
+picks = [
+  { label = "Coussins auto-chauffants", why = "Sans électricité, le plus simple et le plus sûr.", query = "coussin auto chauffant chat chien" },
+  { label = "Tapis chauffants électriques avec thermostat", why = "Pour les animaux âgés ou frileux.", query = "tapis chauffant électrique animaux thermostat" },
+  { label = "Paniers douillets pour l'hiver", why = "Bords hauts et fond épais contre le froid du sol.", query = "panier chat chien hiver bords hauts" },
+]
+faq = [
+  { q = "Peut-on laisser un tapis chauffant branché la nuit ?", a = "Suivez la notice du fabricant. Un modèle avec arrêt automatique ou thermostat est préférable, et l'animal doit pouvoir s'éloigner de la zone chauffée." },
+]
+
+[[guide]]
+slug = "calendrier-avent-chien-chat"
+icon = "🎄"
+title = "Calendrier de l'Avent pour chien ou chat : comment bien le choisir"
+description = "Friandises ou jouets, composition, taille : nos critères pour un calendrier de l'Avent adapté à votre animal."
+intro = "Les calendriers de l'Avent pour animaux sont devenus un classique de décembre. Tous ne se valent pas : voici quoi regarder avant d'en commander un, et quand le commander."
+sections = [
+  { h = "Commandez tôt", p = ["Les calendriers de l'Avent sont des produits saisonniers : les modèles les plus demandés partent souvent en novembre. Pour l'ouvrir dès le 1er décembre, mieux vaut commander dès la mi-novembre."] },
+  { h = "Friandises ou jouets ?", bullets = [
+      "Friandises : vérifiez la liste des ingrédients, surtout si votre animal a des allergies ou un régime particulier.",
+      "Jouets : vérifiez qu'ils sont adaptés à la taille de votre animal pour éviter tout risque d'étouffement.",
+      "Mixte : un bon compromis, souvent un peu plus cher.",
+  ] },
+  { h = "Les critères qui comptent", bullets = [
+      "Un calendrier spécifique à l'espèce : les friandises pour chien ne conviennent pas aux chats, et inversement.",
+      "Des portions raisonnables : les friandises s'ajoutent à la ration du jour.",
+      "Une date limite de consommation qui couvre bien tout le mois de décembre.",
+  ] },
+]
+picks = [
+  { label = "Calendriers de l'Avent pour chien", why = "Friandises ou jouets pour décembre.", query = "calendrier de l'avent chien" },
+  { label = "Calendriers de l'Avent pour chat", why = "Adaptés aux besoins des chats.", query = "calendrier de l'avent chat" },
+  { label = "Friandises naturelles pour chien", why = "Pour composer votre propre calendrier.", query = "friandises naturelles chien" },
+]
+faq = [
+  { q = "Mon animal peut-il manger une friandise chaque jour ?", a = "Oui, si les portions restent petites et que vous les déduisez de sa ration quotidienne. En cas de doute, demandez à votre vétérinaire." },
+]

@@ -173,6 +173,33 @@ STATIC_PAGES = {
 }
 
 
+def kit_page(site: dict, guides: list[dict]) -> str:
+    """Page privée (non référencée) : images Pinterest et messages Facebook prêts à publier."""
+    promo = config.load_toml("promo.toml") if (config.CONFIG_DIR / "promo.toml").exists() else {}
+    base = site["base_url"].rstrip("/") + "/"
+    pins = []
+    for g in guides:
+        link = f"{base}{g['slug']}.html"
+        desc = f"{g['description']} Guide gratuit, sans faux avis."
+        pins.append(f"""<section class="kit reveal"><img src="pins/{e(g['slug'])}.png" alt="{e(g['title'])}" loading="lazy" width="1000" height="1500">
+<p><a class="btn btn-small" href="pins/{e(g['slug'])}.png" download>Enregistrer l'image</a></p>
+<p class="label">Titre</p><div class="copy"><span>{e(g['title'].split(' : ')[0])}</span><button type="button">Copier</button></div>
+<p class="label">Description</p><div class="copy"><span>{e(desc)}</span><button type="button">Copier</button></div>
+<p class="label">Lien</p><div class="copy"><span>{e(link)}</span><button type="button">Copier</button></div></section>""")
+    posts = "".join(
+        f"""<section class="kit reveal"><h3>{e(fb['titre'])}</h3><div class="copy"><span style="white-space:pre-line">{e(fb['texte'])}</span><button type="button">Copier</button></div></section>"""
+        for fb in promo.get("facebook", [])
+    )
+    body = f"""<article class="guide"><h1>Kit de partage</h1>
+<p class="lead">Page de travail, non référencée. Pinterest : enregistrez l'image, puis créez une épingle avec le titre, la description et le lien. Facebook : copiez un message et publiez-le dans un groupe qui accepte ce type de partage.</p>
+<h2>Messages Facebook</h2>{posts}
+<h2>Épingles Pinterest</h2>{"".join(pins)}</article>
+<script>document.querySelectorAll('.copy button').forEach(function(b){{b.addEventListener('click',function(){{
+var t=b.previousElementSibling.innerText;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{b.textContent='Copié ✓';setTimeout(function(){{b.textContent='Copier'}},1500)}}).catch(function(){{b.textContent='Sélectionnez le texte'}});}})}});</script>"""
+    html_page = page(site, "Kit de partage", "Kit de partage", body, "kit-partage.html")
+    return html_page.replace('<meta name="description"', '<meta name="robots" content="noindex, nofollow">\n<meta name="description"', 1)
+
+
 def build(out_dir: Path | None = None) -> Path:
     data = config.load_toml("site.toml")
     site, guides = data["site"], data["guide"]
@@ -183,6 +210,11 @@ def build(out_dir: Path | None = None) -> Path:
     out.mkdir(parents=True)
     for asset in ASSETS.iterdir():
         shutil.copy(asset, out / asset.name)
+
+    static = config.ROOT / "static"
+    if static.exists():
+        shutil.copytree(static, out, dirs_exist_ok=True)
+    (out / "kit-partage.html").write_text(kit_page(site, guides), encoding="utf-8")
 
     (out / "index.html").write_text(page(site, site["name"], site["tagline"], index_body(site, guides), "index.html"), encoding="utf-8")
     for g in guides:
@@ -197,6 +229,6 @@ def build(out_dir: Path | None = None) -> Path:
     (out / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n',
         encoding="utf-8")
-    (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
+    (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /kit-partage.html\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     return out
