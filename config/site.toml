@@ -10,7 +10,7 @@ name = "Pattes au chaud"
 tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait froid."
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
-amazon_tag = ""
+amazon_tag = "pattesauchaud-21"
 updated = "2026-10-20"
 
 [[guide]]
