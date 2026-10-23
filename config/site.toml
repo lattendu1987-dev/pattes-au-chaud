@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-10-20"
+updated = "2026-10-23"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -217,4 +217,37 @@ picks = [
 ]
 faq = [
   { q = "Mon animal peut-il manger une friandise chaque jour ?", a = "Oui, si les portions restent petites et que vous les déduisez de sa ration quotidienne. En cas de doute, demandez à votre vétérinaire." },
+]
+
+[[guide]]
+slug = "collier-lumineux-promenade-nuit"
+icon = "🔦"
+title = "Collier lumineux et lampe : bien voir et être vu pendant les promenades de nuit"
+description = "Collier ou harnais lumineux, lampe frontale, gilet réfléchissant : les critères pour promener son chien en sécurité quand il fait nuit tôt."
+intro = "Avec le passage à l'heure d'hiver, la promenade du soir se fait souvent dans le noir. Un chien sombre devient presque invisible pour les automobilistes et les cyclistes. Quelques équipements simples changent tout."
+sections = [
+  { h = "Rendre le chien visible", bullets = [
+      "Collier ou harnais lumineux à LED : choisissez un modèle rechargeable par USB, avec un mode fixe et un mode clignotant.",
+      "Vérifiez l'étanchéité indiquée par le fabricant (pluie, flaques) et l'autonomie annoncée.",
+      "Un pendentif lumineux qui s'accroche au collier existant est une solution économique pour commencer.",
+      "Le gilet ou le manteau avec bandes réfléchissantes complète la lumière : il renvoie la lumière des phares.",
+  ] },
+  { h = "Bien voir où vous marchez", bullets = [
+      "Une lampe frontale laisse les deux mains libres pour la laisse et les sacs.",
+      "Préférez un modèle rechargeable avec plusieurs niveaux d'éclairage et un mode rouge qui n'éblouit pas les autres.",
+      "Pour vous aussi, un brassard ou une veste réfléchissante est utile en bord de route.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Rechargez les équipements à heure fixe, par exemple au retour de la promenade du soir.",
+      "Gardez le chien en laisse près des routes, même s'il est bien visible.",
+      "Choisissez des itinéraires éclairés quand c'est possible.",
+  ] },
+]
+picks = [
+  { label = "Colliers lumineux rechargeables", why = "Le chien est visible de loin, même par temps de pluie.", query = "collier lumineux chien rechargeable" },
+  { label = "Lampes frontales rechargeables", why = "Les mains libres pour la laisse.", query = "lampe frontale rechargeable" },
+  { label = "Gilets réfléchissants pour chien", why = "Complément idéal à la lumière.", query = "gilet réfléchissant chien" },
+]
+faq = [
+  { q = "Le clignotement dérange-t-il le chien ?", a = "La lumière est placée autour du cou ou sur le harnais, hors de son champ de vision direct. Si votre chien semble gêné, utilisez le mode fixe." },
 ]
