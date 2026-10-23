@@ -198,6 +198,10 @@ def kit_page(site: dict, guides: list[dict]) -> str:
     )
     body = f"""<article class="guide"><h1>Kit de partage</h1>
 <p class="lead">Page de travail, non référencée. Pinterest : enregistrez l'image, puis créez une épingle avec le titre, la description et le lien. Facebook : copiez un message et publiez-le dans un groupe qui accepte ce type de partage.</p>
+<h2>Épingles automatiques (Pinterest)</h2><section class="kit reveal">
+<p>Sur pinterest.fr (version ordinateur) : Paramètres → « Importer du contenu » / « Création d'Épingles en masse » → importez le fichier.</p>
+<p><a class="btn btn-small" href="epingles-toutes.csv" download>Fichier : toutes les épingles</a></p>
+<p><a class="btn btn-small" href="epingles-semaine.csv" download>Fichier : épingles de la semaine</a></p></section>
 <h2>Photo de profil</h2><section class="kit reveal"><img src="logo.png" alt="Logo Pattes au chaud" width="800" height="800" style="max-width:240px"><p><a class="btn btn-small" href="logo.png" download>Enregistrer le logo</a></p></section>
 <h2>Messages Facebook</h2>{posts}
 <h2>Épingles Pinterest</h2>{"".join(pins)}</article>
@@ -205,6 +209,35 @@ def kit_page(site: dict, guides: list[dict]) -> str:
 var t=b.previousElementSibling.innerText;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{b.textContent='Copié ✓';setTimeout(function(){{b.textContent='Copier'}},1500)}}).catch(function(){{b.textContent='Sélectionnez le texte'}});}})}});</script>"""
     html_page = page(site, "Kit de partage", "Kit de partage", body, "kit-partage.html")
     return html_page.replace('<meta name="description"', '<meta name="robots" content="noindex, nofollow">\n<meta name="description"', 1)
+
+
+BOARDS = {"cadeaux-noel-animaux": "Noël des animaux", "calendrier-avent-chien-chat": "Noël des animaux"}
+DEFAULT_BOARD = "Hiver avec son chien"
+
+
+def pins_csv(site: dict, guides: list[dict], since: str | None = None) -> str:
+    """Fichier pour « Création d'Épingles en masse » de Pinterest (import .csv)."""
+    import csv, io
+    base = site["base_url"].rstrip("/") + "/"
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["Title", "Media URL", "Pinterest board", "Thumbnail", "Description", "Link", "Publish date", "Keywords"])
+    for g in sorted(guides, key=lambda g: g.get("date", site["updated"])):
+        if g.get("epingle_manuelle"):
+            continue
+        if since and g.get("date", site["updated"]) < since:
+            continue
+        w.writerow([
+            g["title"].split(" : ")[0][:100],
+            f"{base}pins/{g['slug']}.png",
+            BOARDS.get(g["slug"], DEFAULT_BOARD),
+            "",
+            (g["description"] + " Guide gratuit, sans faux avis.")[:500],
+            f"{base}{g['slug']}.html",
+            "",
+            "chien, chat, animaux, hiver, guide d'achat",
+        ])
+    return buf.getvalue()
 
 
 def rss_feed(site: dict, guides: list[dict]) -> str:
@@ -270,6 +303,10 @@ def build(out_dir: Path | None = None) -> Path:
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n',
         encoding="utf-8")
     (out / "feed.xml").write_text(rss_feed(site, guides), encoding="utf-8")
+    from datetime import date, timedelta
+    week_ago = (date.fromisoformat(site["updated"]) - timedelta(days=7)).isoformat()
+    (out / "epingles-toutes.csv").write_text(pins_csv(site, guides), encoding="utf-8")
+    (out / "epingles-semaine.csv").write_text(pins_csv(site, guides, since=week_ago), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /kit-partage.html\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     return out
