@@ -1,0 +1,250 @@
+# English version (Amazon.com and other English-speaking stores).
+# Same editorial rules as the French site: no fake reviews, no "we tested", no prices.
+
+[site]
+name = "Warm Paws"
+tagline = "Buying guides to keep your dog or cat comfortable, especially when it's cold."
+base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
+# Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
+amazon_tag = ""
+amazon_domain = "www.amazon.com"
+updated = "2026-10-23"
+
+[[guide]]
+slug = "dog-boots-winter"
+icon = "🥾"
+title = "Dog boots for winter: how to choose a pair your dog will actually keep on"
+description = "De-icing salt, grit and cold: what to check before buying boots for your dog."
+intro = "Between de-icing salt, grit and freezing sidewalks, your dog's paw pads take a beating all winter. A good pair of boots solves most of the problem, as long as you pick the right size and type."
+sections = [
+  { h = "Why protect the paws", p = ["Salt and grit spread on sidewalks can irritate or dry out paw pads, and many dogs lick the residue once they're back home. Long-haired dogs also get snowballs stuck between their toes."] },
+  { h = "What to look for", bullets = [
+      "A non-slip sole that is still flexible enough for the dog to feel the ground.",
+      "A snug closure at the ankle (wide hook-and-loop strap), ideally reflective for dark evenings.",
+      "A waterproof upper: wet snow soaks through thin fabric quickly.",
+      "A detailed size chart: measure the width of the paw while your dog is standing and compare it with the maker's chart.",
+      "Sets of 4: check whether your dog's front and back paws are the same size.",
+  ] },
+  { h = "Sturdy boots or rubber booties?", p = [
+      "Boots with a firm sole last several seasons and grip better on ice, but need a short adjustment period.",
+      "Thin rubber booties are cheaper and feel more natural, but they get lost and wear out faster.",
+  ] },
+  { h = "Getting your dog used to them", bullets = [
+      "Start indoors, a few minutes at a time, with treats.",
+      "Funny high-stepping at first is normal: most dogs adapt after a few walks.",
+      "Back home, rinse the paws with lukewarm water and dry them, boots or not.",
+  ] },
+]
+picks = [
+  { label = "Non-slip winter dog boots", why = "For long walks and icy sidewalks.", query = "winter dog boots non slip" },
+  { label = "Rubber dog booties", why = "A light, budget option for short outings.", query = "rubber dog booties" },
+  { label = "Paw protection wax", why = "An alternative or extra layer under boots.", query = "dog paw protection wax" },
+]
+faq = [
+  { q = "My dog refuses to walk in boots. Is that normal?", a = "Yes, at first. Keep the sessions short, use treats, and check that the strap is neither too loose nor too tight." },
+  { q = "How do I know the size is right?", a = "The boot should not twist on the paw or slip off when you pull gently. If you're between two sizes, follow the maker's recommendation." },
+]
+
+[[guide]]
+slug = "dog-winter-coat"
+icon = "🧥"
+title = "Winter coat for dogs: a simple guide to choosing the right one"
+description = "Belly coverage, waterproofing, measurements: what to check before you buy."
+intro = "Not every dog needs a coat. But for small dogs, short-haired breeds, seniors and dogs that feel the cold, a good coat makes winter walks much more pleasant."
+sections = [
+  { h = "Does your dog need one?", p = ["Northern breeds with a double coat usually do fine without. Small, short-haired or older dogs tend to feel the cold more. If in doubt, ask your vet."] },
+  { h = "What to look for", bullets = [
+      "Belly coverage: that's the part that touches the snow on small dogs.",
+      "A waterproof shell and a warm lining (fleece or quilted).",
+      "An opening for the harness if you walk your dog on a harness.",
+      "Reflective strips or details: it gets dark early in winter.",
+      "Machine washable.",
+  ] },
+  { h = "How to measure", bullets = [
+      "Back length: from the base of the neck to the base of the tail.",
+      "Chest: at the widest point, just behind the front legs.",
+      "Neck: where the collar sits.",
+  ] },
+]
+picks = [
+  { label = "Waterproof lined dog coats", why = "The right starting point for most dogs.", query = "waterproof winter dog coat lined" },
+  { label = "Coats with belly coverage", why = "For small dogs close to the snow.", query = "dog winter coat belly coverage" },
+  { label = "Reflective dog coats", why = "For walks after dark.", query = "reflective dog winter coat" },
+]
+faq = [
+  { q = "Should the coat be tight?", a = "Snug but not restrictive: you should be able to slide two fingers under the straps." },
+]
+
+[[guide]]
+slug = "rechargeable-hand-warmers"
+icon = "🔥"
+title = "Rechargeable hand warmers: what matters for cold dog walks"
+description = "Battery life, format, charging and safety: how to compare electric hand warmers."
+intro = "When you're holding a leash in freezing weather, your hands usually give up first. Rechargeable hand warmers can replace disposable ones, as long as you compare them carefully."
+sections = [
+  { h = "What to look for", bullets = [
+      "Capacity (mAh): higher means longer battery life, but a heavier device.",
+      "Advertised battery life is measured in ideal conditions. Expect less in real cold.",
+      "Several heat levels: useful to save battery.",
+      "Two-piece sets (often magnetic): one per hand or pocket.",
+      "USB-C charging, and a power-bank function to top up your phone.",
+  ] },
+  { h = "Safety", bullets = [
+      "Prefer a brand that clearly states its certifications and offers customer support.",
+      "Follow the maker's instructions: don't keep the device directly against your skin for long periods.",
+      "Don't leave it charging unattended, and stop using it if it swells or gets unusually hot.",
+  ] },
+  { h = "Rechargeable or disposable?", p = ["Disposable warmers are cheap per unit but add up over a whole winter. A rechargeable model costs more upfront but lasts the season."] },
+]
+picks = [
+  { label = "Magnetic rechargeable pairs", why = "One for each hand, handy on walks.", query = "rechargeable hand warmers 2 pack magnetic" },
+  { label = "USB-C models with power bank", why = "One cable for everything.", query = "rechargeable hand warmer usb c power bank" },
+  { label = "Warm touchscreen gloves", why = "The perfect match for hand warmers.", query = "warm winter gloves touchscreen" },
+]
+faq = [
+  { q = "How long does a charge last?", a = "It depends on the model and heat level. Look at the battery life on the lowest setting in the maker's specs, and expect less in very cold weather." },
+]
+
+[[guide]]
+slug = "pet-hair-removal"
+icon = "🧹"
+title = "Pet hair everywhere: the tools that really work"
+description = "Reusable rollers, rubber brushes, grooming gloves, vacuums: what to choose for your situation."
+intro = "Spring and fall shedding, the couch, dark clothes… There are simple tools to get back in control without buying sticky refills every week."
+sections = [
+  { h = "Start at the source", p = ["Regular brushing removes loose hair before it ends up on the furniture. It's the most effective step, especially during shedding season."] },
+  { h = "Tools by use", bullets = [
+      "Reusable roller with a collection chamber: for couches and cushions, no refills needed.",
+      "Rubber brush or squeegee: works well on rugs and short-pile fabrics.",
+      "Grooming glove: for pets that dislike brushes.",
+      "Cat corner brush: fixes to a wall corner, the cat rubs against it and leaves its hair there.",
+      "Vacuum with a motorized pet brush: the most effective investment for large areas.",
+  ] },
+]
+picks = [
+  { label = "Reusable pet hair rollers", why = "For furniture, no refills.", query = "reusable pet hair remover roller" },
+  { label = "Cat corner brushes", why = "Cats groom themselves.", query = "cat corner self groomer brush" },
+  { label = "Grooming gloves", why = "For pets that run from the brush.", query = "pet grooming glove" },
+  { label = "Pet hair vacuums", why = "For homes with heavy shedding.", query = "vacuum for pet hair" },
+]
+faq = [
+  { q = "Can a reusable roller damage fabric?", a = "It generally suits upholstery. Test it on a hidden spot first for delicate fabrics." },
+]
+
+[[guide]]
+slug = "christmas-gifts-for-pets"
+icon = "🎁"
+title = "Christmas gift ideas for pets and their humans"
+description = "Useful, long-lasting ideas for the holidays, from puzzle toys to custom pet portraits."
+intro = "The most appreciated holiday gifts are often the ones that get used all year. Here are ideas by type, with what to check before buying."
+sections = [
+  { h = "Before you buy", bullets = [
+      "Match toy size to the size of the pet to avoid choking hazards.",
+      "Supervise the first uses of any new toy.",
+      "For Christmas, check the estimated delivery date shown before ordering.",
+  ] },
+]
+picks = [
+  { label = "Custom pet portrait", why = "A unique gift for pet owners.", query = "custom pet portrait" },
+  { label = "Snuffle mats and puzzle toys", why = "To keep them busy on indoor winter days.", query = "snuffle mat for dogs" },
+  { label = "Orthopedic dog bed", why = "For senior or large dogs.", query = "orthopedic dog bed" },
+  { label = "Cat water fountain", why = "Many cats drink more from running water.", query = "cat water fountain" },
+  { label = "Washable couch cover", why = "Protects the couch and goes in the washer.", query = "waterproof couch cover for pets" },
+]
+faq = [
+  { q = "Will gifts arrive before Christmas?", a = "Delivery times depend on the seller. The estimated date is shown on Amazon before you order: check it." },
+]
+
+[[guide]]
+slug = "heated-pet-bed"
+icon = "🛏️"
+title = "Heated pet bed or pad: how to choose one and use it safely"
+description = "Electric or self-warming, wattage, cord safety: what to check before buying."
+intro = "Senior cats, small dogs and pets that sleep near a window love a warmer bed in winter. There are two main types of heated pads: electric and self-warming. Here's how to choose."
+sections = [
+  { h = "Electric or self-warming?", bullets = [
+      "Self-warming (no electricity): an insulating layer reflects your pet's body heat. No cord, no electrical risk: the best place to start.",
+      "Electric: more noticeable warmth, useful for a senior or recovering pet or a cold room. It needs more precautions.",
+  ] },
+  { h = "What to look for (electric models)", bullets = [
+      "Low wattage and gentle heat, close to your pet's body temperature.",
+      "Auto shut-off or a thermostat to prevent overheating.",
+      "A chew-resistant cord cover, especially with puppies or kittens.",
+      "A recognized safety certification and clear instructions.",
+      "A removable, washable cover.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Always leave an unheated area next to it so your pet can move away if too warm.",
+      "Check the cord regularly and stop using it if it's damaged.",
+      "Ask your vet for advice for very young, very old or immobile pets.",
+  ] },
+]
+picks = [
+  { label = "Self-warming pet pads", why = "No electricity: the simplest and safest.", query = "self warming pet pad" },
+  { label = "Electric heated pads with thermostat", why = "For senior or chilly pets.", query = "heated pet pad thermostat" },
+  { label = "Cozy winter beds", why = "High sides and thick base against cold floors.", query = "cozy pet bed high sides" },
+]
+faq = [
+  { q = "Can a heated pad stay plugged in overnight?", a = "Follow the maker's instructions. A model with auto shut-off or a thermostat is preferable, and your pet should be able to move off the warm area." },
+]
+
+[[guide]]
+slug = "advent-calendar-for-pets"
+icon = "🎄"
+title = "Advent calendar for dogs or cats: how to pick the right one"
+description = "Treats or toys, ingredients, size: our checklist for an advent calendar that suits your pet."
+intro = "Pet advent calendars have become a December classic. They're not all equal: here's what to check before ordering, and when to order."
+sections = [
+  { h = "Order early", p = ["Advent calendars are seasonal: the most popular ones often sell out in November. To open it on December 1st, order by mid-November."] },
+  { h = "Treats or toys?", bullets = [
+      "Treats: check the ingredient list, especially if your pet has allergies or a special diet.",
+      "Toys: make sure they suit your pet's size to avoid choking hazards.",
+      "Mixed: a good compromise, often slightly more expensive.",
+  ] },
+  { h = "What to look for", bullets = [
+      "A calendar made for the right species: dog treats don't suit cats, and vice versa.",
+      "Reasonable portions: treats add to the day's food ration.",
+      "A best-before date that covers the whole of December.",
+  ] },
+]
+picks = [
+  { label = "Dog advent calendars", why = "Treats or toys for December.", query = "dog advent calendar" },
+  { label = "Cat advent calendars", why = "Made for cats' needs.", query = "cat advent calendar" },
+  { label = "Natural dog treats", why = "To build your own calendar.", query = "natural dog treats" },
+]
+faq = [
+  { q = "Can my pet have a treat every day?", a = "Yes, if portions stay small and you deduct them from the daily ration. If in doubt, ask your vet." },
+]
+
+[[guide]]
+slug = "light-up-collar-night-walks"
+icon = "🔦"
+title = "Light-up collars and headlamps: see and be seen on night walks"
+description = "Light-up collar or harness, headlamp, reflective vest: how to walk your dog safely when it gets dark early."
+intro = "Once the clocks go back, the evening walk often happens in the dark. A dark-coated dog becomes almost invisible to drivers and cyclists. A few simple items change everything."
+sections = [
+  { h = "Make your dog visible", bullets = [
+      "LED light-up collar or harness: choose a USB-rechargeable model with steady and flashing modes.",
+      "Check the water resistance stated by the maker (rain, puddles) and the advertised battery life.",
+      "A clip-on light for the existing collar is a cheap way to start.",
+      "A vest or coat with reflective strips complements the light by bouncing back headlights.",
+  ] },
+  { h = "See where you're walking", bullets = [
+      "A headlamp keeps both hands free for the leash and bags.",
+      "Prefer a rechargeable model with several brightness levels and a red mode that doesn't dazzle others.",
+      "For you too, a reflective armband or jacket helps along roads.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Recharge everything at a fixed time, for example after the evening walk.",
+      "Keep your dog on a leash near roads, even when visible.",
+      "Choose lit routes when possible.",
+  ] },
+]
+picks = [
+  { label = "Rechargeable light-up dog collars", why = "Visible from far away, even in the rain.", query = "light up dog collar rechargeable" },
+  { label = "Rechargeable headlamps", why = "Hands free for the leash.", query = "rechargeable headlamp" },
+  { label = "Reflective dog vests", why = "The perfect complement to a light.", query = "reflective dog vest" },
+]
+faq = [
+  { q = "Does flashing bother the dog?", a = "The light sits around the neck or on the harness, outside the dog's direct field of view. If your dog seems bothered, use the steady mode." },
+]

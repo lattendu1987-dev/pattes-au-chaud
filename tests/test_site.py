@@ -65,3 +65,17 @@ class FeedTest(unittest.TestCase):
         self.assertFalse(any("bottes-chien-hiver" in l for l in links))
         for item in root.iter("item"):
             self.assertIsNotNone(item.find("enclosure"))
+
+
+class EnglishSiteTest(unittest.TestCase):
+    def test_english_pages_and_disclosure(self):
+        out = build(Path(tempfile.mkdtemp()) / "public")
+        en = out / "en"
+        self.assertTrue((en / "index.html").exists())
+        guides = config.load_toml("site_en.toml")["guide"]
+        for g in guides:
+            html = (en / f"{g['slug']}.html").read_text(encoding="utf-8")
+            self.assertIn("As an Amazon Associate I earn from qualifying purchases", html)
+            self.assertIn("amazon.com/s?k=", html)
+            self.assertNotRegex(html, r"\d+[,.]\d{2}\s?[$€£]")
+        self.assertIn("/en/", (out / "sitemap.xml").read_text(encoding="utf-8"))

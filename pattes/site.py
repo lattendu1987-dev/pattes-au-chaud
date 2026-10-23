@@ -60,7 +60,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="top">
   <a class="brand" href="./"><span aria-hidden="true">🐾</span> {e(site['name'])}</a>
-  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="a-propos.html">À propos</a></nav>
+  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="a-propos.html">À propos</a><a href="en/">EN</a></nav>
 </header>
 <div class="disclosure" role="note">{e(DISCLOSURE)} <a href="divulgation.html">En savoir plus</a></div>
 <main id="contenu">
@@ -298,6 +298,8 @@ def build(out_dir: Path | None = None) -> Path:
 
     base = site["base_url"].rstrip("/") + "/"
     urls = [base] + [f"{base}{g['slug']}.html" for g in guides] + [f"{base}{n}" for n in STATIC_PAGES if n != "404.html"]
+    from . import site_en
+    urls += site_en.build(out / "en")
     sitemap = "\n".join(f"  <url><loc>{e(u)}</loc><lastmod>{site['updated']}</lastmod></url>" for u in urls)
     (out / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n',
