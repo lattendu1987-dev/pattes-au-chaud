@@ -52,6 +52,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <meta property="og:locale" content="fr_FR">
 <meta name="theme-color" content="#14243a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="alternate" type="application/rss+xml" title="Pattes au chaud" href="feed.xml">
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -206,6 +207,39 @@ var t=b.previousElementSibling.innerText;(navigator.clipboard?navigator.clipboar
     return html_page.replace('<meta name="description"', '<meta name="robots" content="noindex, nofollow">\n<meta name="description"', 1)
 
 
+def rss_feed(site: dict, guides: list[dict]) -> str:
+    """Flux RSS lu par Pinterest pour créer les épingles automatiquement (une par guide)."""
+    from datetime import datetime, timezone
+    base = site["base_url"].rstrip("/") + "/"
+    items = []
+    for g in sorted(guides, key=lambda g: g.get("date", site["updated"]), reverse=True):
+        if g.get("epingle_manuelle"):
+            continue
+        d = datetime.strptime(g.get("date", site["updated"]), "%Y-%m-%d").replace(hour=8, tzinfo=timezone.utc)
+        link = f"{base}{g['slug']}.html"
+        img = f"{base}pins/{g['slug']}.png"
+        items.append(f"""  <item>
+    <title>{e(g['title'].split(' : ')[0])}</title>
+    <link>{e(link)}</link>
+    <guid isPermaLink="true">{e(link)}</guid>
+    <pubDate>{d.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>
+    <description>{e(g['description'] + ' Guide gratuit, sans faux avis.')}</description>
+    <enclosure url="{e(img)}" type="image/png" length="0"/>
+    <media:content url="{e(img)}" medium="image" type="image/png" width="1000" height="1500"/>
+  </item>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>{e(site['name'])}</title>
+  <link>{e(base)}</link>
+  <description>{e(site['tagline'])}</description>
+  <language>fr-FR</language>
+{chr(10).join(items)}
+</channel>
+</rss>
+"""
+
+
 def build(out_dir: Path | None = None) -> Path:
     data = config.load_toml("site.toml")
     site, guides = data["site"], data["guide"]
@@ -235,6 +269,7 @@ def build(out_dir: Path | None = None) -> Path:
     (out / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n',
         encoding="utf-8")
+    (out / "feed.xml").write_text(rss_feed(site, guides), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /kit-partage.html\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     return out

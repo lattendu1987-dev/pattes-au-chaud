@@ -15,6 +15,9 @@ updated = "2026-10-23"
 
 [[guide]]
 slug = "bottes-chien-hiver"
+date = "2026-10-20"
+# Déjà épinglé à la main : exclu du flux Pinterest pour éviter un doublon.
+epingle_manuelle = true
 icon = "🥾"
 title = "Bottes pour chien : bien choisir pour l'hiver"
 description = "Sel de déneigement, gravillons, froid : comment choisir des bottes que votre chien gardera vraiment."
@@ -50,6 +53,7 @@ faq = [
 
 [[guide]]
 slug = "manteau-chien-hiver"
+date = "2026-10-20"
 icon = "🧥"
 title = "Manteau d'hiver pour chien : le guide pour bien le choisir"
 description = "Couverture du ventre, imperméabilité, mesures : ce qu'il faut regarder avant d'acheter."
@@ -80,6 +84,7 @@ faq = [
 
 [[guide]]
 slug = "chauffe-mains-rechargeables"
+date = "2026-10-20"
 icon = "🔥"
 title = "Chauffe-mains rechargeables : les bons critères pour les promenades par grand froid"
 description = "Autonomie, format, recharge et sécurité : comment comparer les chauffe-mains électriques."
@@ -110,6 +115,7 @@ faq = [
 
 [[guide]]
 slug = "poils-animaux-maison"
+date = "2026-10-20"
 icon = "🧹"
 title = "Poils d'animaux partout : les outils qui fonctionnent vraiment"
 description = "Rouleaux réutilisables, brosses, gants, aspirateurs : quoi choisir selon votre situation."
@@ -136,6 +142,7 @@ faq = [
 
 [[guide]]
 slug = "cadeaux-noel-animaux"
+date = "2026-10-20"
 icon = "🎁"
 title = "Idées-cadeaux de Noël pour les animaux et leurs humains"
 description = "Des idées utiles et durables pour les fêtes, du jouet d'occupation au portrait personnalisé."
@@ -160,6 +167,7 @@ faq = [
 
 [[guide]]
 slug = "coussin-chauffant-chat-chien"
+date = "2026-10-20"
 icon = "🛏️"
 title = "Coussin chauffant pour chat ou chien : bien choisir et l'utiliser sans risque"
 description = "Électrique ou auto-chauffant, puissance, sécurité du câble : les points à vérifier avant d'acheter."
@@ -193,6 +201,9 @@ faq = [
 
 [[guide]]
 slug = "calendrier-avent-chien-chat"
+date = "2026-10-20"
+# Déjà épinglé à la main : exclu du flux Pinterest pour éviter un doublon.
+epingle_manuelle = true
 icon = "🎄"
 title = "Calendrier de l'Avent pour chien ou chat : comment bien le choisir"
 description = "Friandises ou jouets, composition, taille : nos critères pour un calendrier de l'Avent adapté à votre animal."
@@ -221,6 +232,7 @@ faq = [
 
 [[guide]]
 slug = "collier-lumineux-promenade-nuit"
+date = "2026-10-23"
 icon = "🔦"
 title = "Collier lumineux et lampe : bien voir et être vu pendant les promenades de nuit"
 description = "Collier ou harnais lumineux, lampe frontale, gilet réfléchissant : les critères pour promener son chien en sécurité quand il fait nuit tôt."

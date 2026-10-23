@@ -53,3 +53,15 @@ class AffiliateTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FeedTest(unittest.TestCase):
+    def test_feed_valid_and_skips_manual_pins(self):
+        import xml.etree.ElementTree as ET
+        out = build(Path(tempfile.mkdtemp()) / "public")
+        root = ET.parse(out / "feed.xml").getroot()
+        links = [i.findtext("link") for i in root.iter("item")]
+        self.assertTrue(links)
+        self.assertFalse(any("bottes-chien-hiver" in l for l in links))
+        for item in root.iter("item"):
+            self.assertIsNotNone(item.find("enclosure"))
