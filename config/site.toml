@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-10-23"
+updated = "2026-10-27"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -262,4 +262,39 @@ picks = [
 ]
 faq = [
   { q = "Le clignotement dérange-t-il le chien ?", a = "La lumière est placée autour du cou ou sur le harnais, hors de son champ de vision direct. Si votre chien semble gêné, utilisez le mode fixe." },
+]
+
+[[guide]]
+slug = "jouets-occupation-chien-pluie"
+date = "2026-10-27"
+icon = "🧩"
+title = "Jouets d'occupation : occuper son chien les jours de pluie"
+description = "Tapis de fouille, jouets distributeurs, puzzles : les critères pour dépenser l'énergie de votre chien à la maison quand il fait mauvais."
+intro = "Quand il pleut des cordes ou qu'il fait nuit tôt, les promenades raccourcissent. Un chien qui s'ennuie peut vite mâchouiller ce qu'il trouve. Les jeux qui font travailler le flair et la réflexion fatiguent souvent autant qu'une balade."
+sections = [
+  { h = "Les grands types de jeux", bullets = [
+      "Tapis de fouille : on cache des croquettes dans les replis, le chien les cherche avec son flair.",
+      "Jouets distributeurs : une balle ou un cube qui libère des friandises quand le chien le fait rouler.",
+      "Puzzles à niveaux : des trappes à ouvrir et des pièces à déplacer, avec plusieurs niveaux de difficulté.",
+      "Jouets à remplir et à congeler : ils occupent longtemps, idéals pendant votre télétravail.",
+  ] },
+  { h = "Les critères qui comptent", bullets = [
+      "Taille adaptée au gabarit du chien : assez grand pour qu'il ne puisse pas l'avaler.",
+      "Matière solide pour les gros mâcheurs, et lavable (passage au lave-vaisselle ou à la machine).",
+      "Niveau de difficulté : commencez facile pour que le chien réussisse vite, puis augmentez.",
+      "Antidérapant sous les puzzles, pour qu'ils ne glissent pas sur le carrelage.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Utilisez une partie de la ration du jour plutôt que d'ajouter des friandises.",
+      "Restez à côté les premières fois et rangez le jouet s'il commence à s'abîmer.",
+      "Alternez les jeux d'un jour à l'autre pour garder l'intérêt.",
+  ] },
+]
+picks = [
+  { label = "Tapis de fouille", why = "Le plus simple pour faire travailler le flair.", query = "tapis de fouille chien" },
+  { label = "Jouets distributeurs de friandises", why = "Pour les chiens qui aiment pousser et faire rouler.", query = "jouet distributeur friandises chien" },
+  { label = "Puzzles pour chien", why = "Pour les chiens malins qui s'ennuient vite.", query = "jeu d'intelligence chien puzzle" },
+]
+faq = [
+  { q = "Combien de temps par jour ?", a = "Deux ou trois séances de 10 à 15 minutes suffisent souvent à fatiguer un chien, en complément des sorties." },
 ]

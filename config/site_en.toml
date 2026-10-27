@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = ""
 amazon_domain = "www.amazon.com"
-updated = "2026-10-23"
+updated = "2026-10-27"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -247,4 +247,38 @@ picks = [
 ]
 faq = [
   { q = "Does flashing bother the dog?", a = "The light sits around the neck or on the harness, outside the dog's direct field of view. If your dog seems bothered, use the steady mode." },
+]
+
+[[guide]]
+slug = "dog-enrichment-toys-rainy-days"
+icon = "🧩"
+title = "Enrichment toys: keeping your dog busy on rainy days"
+description = "Snuffle mats, treat-dispensing toys, puzzles: how to burn your dog's energy indoors when the weather is bad."
+intro = "When it's pouring or dark by late afternoon, walks get shorter. A bored dog can quickly start chewing whatever it finds. Games that use the nose and the brain often tire a dog as much as a walk."
+sections = [
+  { h = "Main types of games", bullets = [
+      "Snuffle mats: hide kibble in the folds and let your dog sniff it out.",
+      "Treat-dispensing toys: a ball or cube that releases treats as the dog rolls it.",
+      "Puzzle toys: flaps to lift and pieces to slide, with several difficulty levels.",
+      "Stuffable, freezable toys: they keep dogs busy for a long time, great while you work from home.",
+  ] },
+  { h = "What to look for", bullets = [
+      "Size matched to your dog: big enough that it can't be swallowed.",
+      "Tough material for strong chewers, and easy to clean (dishwasher or washing machine).",
+      "Difficulty level: start easy so your dog succeeds quickly, then step it up.",
+      "Non-slip base under puzzles so they don't slide on hard floors.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Use part of the daily food ration instead of adding extra treats.",
+      "Stay nearby the first few times, and put the toy away if it starts to break.",
+      "Rotate games from day to day to keep things interesting.",
+  ] },
+]
+picks = [
+  { label = "Snuffle mats", why = "The easiest way to put the nose to work.", query = "snuffle mat for dogs" },
+  { label = "Treat-dispensing toys", why = "For dogs who love to push and roll things.", query = "treat dispensing dog toy" },
+  { label = "Dog puzzle toys", why = "For clever dogs who get bored fast.", query = "dog puzzle toy" },
+]
+faq = [
+  { q = "How much time per day?", a = "Two or three 10 to 15 minute sessions are often enough to tire a dog, on top of outings." },
 ]
