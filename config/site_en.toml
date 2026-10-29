@@ -253,6 +253,8 @@ faq = [
 [[guide]]
 slug = "dog-enrichment-toys-rainy-days"
 date = "2026-10-27"
+# Already imported on Pinterest on 2026-10-29: excluded from weekly pin files.
+epingle_manuelle = true
 icon = "🧩"
 title = "Enrichment toys: keeping your dog busy on rainy days"
 description = "Snuffle mats, treat-dispensing toys, puzzles: how to burn your dog's energy indoors when the weather is bad."
