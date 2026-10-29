@@ -306,7 +306,10 @@ def build(out_dir: Path | None = None) -> Path:
         encoding="utf-8")
     (out / "feed.xml").write_text(rss_feed(site, guides), encoding="utf-8")
     from datetime import date, timedelta
-    week_ago = (date.fromisoformat(site["updated"]) - timedelta(days=7)).isoformat()
+    # Guides publiés depuis le dernier import du samedi (le samedi précédant la date de mise à jour).
+    upd = date.fromisoformat(site["updated"])
+    last_saturday = upd - timedelta(days=((upd.weekday() - 5) % 7) or 7)
+    week_ago = (last_saturday + timedelta(days=1)).isoformat()
     (out / "epingles-toutes.csv").write_text(pins_csv(site, guides), encoding="utf-8")
     (out / "epingles-semaine.csv").write_text(pins_csv(site, guides, since=week_ago), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /kit-partage.html\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
