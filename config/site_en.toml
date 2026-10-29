@@ -6,7 +6,7 @@ name = "Warm Paws"
 tagline = "Buying guides to keep your dog or cat comfortable, especially when it's cold."
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
-amazon_tag = ""
+amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
 updated = "2026-10-27"
 
