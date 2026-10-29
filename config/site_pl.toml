@@ -1,0 +1,282 @@
+# Wersja polska (Polska), linki do AliExpress PL przez Awin.
+# Te same zasady: bez fałszywych opinii, bez „przetestowaliśmy”, bez cen.
+
+[site]
+name = "Ciepłe Łapki"
+tagline = "Poradniki zakupowe, dzięki którym Twój pies lub kot będzie miał wygodnie, zwłaszcza zimą."
+base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
+# Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
+awin_mid = ""
+awin_affid = "3138840"
+updated = "2026-10-29"
+
+[[guide]]
+slug = "buty-dla-psa-zima"
+icon = "🥾"
+title = "Buty dla psa na zimę: jak wybrać parę, którą pies naprawdę będzie nosił"
+description = "Sól drogowa, piasek i mróz: co sprawdzić przed zakupem butów dla psa."
+intro = "Sól, piasek i zamarznięte chodniki przez całą zimę niszczą poduszki łap. Dobre buty rozwiązują większość problemu, pod warunkiem że dobierzesz właściwy rozmiar i rodzaj."
+sections = [
+  { h = "Dlaczego chronić łapy", p = ["Sól i piasek sypane na chodniki mogą podrażniać i wysuszać poduszki łap, a wiele psów zlizuje resztki po powrocie do domu. U psów długowłosych między palcami tworzą się też kulki śniegu."] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Antypoślizgowa, ale elastyczna podeszwa, żeby pies czuł podłoże.",
+      "Dobre zapięcie przy kostce (szeroki rzep), najlepiej odblaskowe na ciemne wieczory.",
+      "Wodoodporna cholewka: mokry śnieg szybko przemacza cienki materiał.",
+      "Dokładna tabela rozmiarów: zmierz szerokość łapy, gdy pies stoi, i porównaj z tabelą producenta.",
+      "Komplety po 4 sztuki: sprawdź, czy przednie i tylne łapy psa mają ten sam rozmiar.",
+  ] },
+  { h = "Solidne buty czy gumowe skarpety?", p = [
+      "Buty z twardą podeszwą wytrzymują kilka sezonów i lepiej trzymają się lodu, ale pies potrzebuje chwili, żeby się przyzwyczaić.",
+      "Cienkie gumowe skarpety są tańsze i bardziej naturalne w odczuciu, ale łatwiej je zgubić i szybciej się zużywają.",
+  ] },
+  { h = "Jak przyzwyczaić psa", bullets = [
+      "Zacznij w domu, po kilka minut, z nagrodami.",
+      "Śmieszne podnoszenie łap na początku jest normalne: większość psów przyzwyczaja się po kilku spacerach.",
+      "Po powrocie opłucz łapy letnią wodą i wytrzyj, z butami czy bez.",
+  ] },
+]
+picks = [
+  { label = "Antypoślizgowe buty zimowe dla psa", why = "Na długie spacery i oblodzone chodniki.", query = "winter dog boots non slip" },
+  { label = "Gumowe skarpety dla psa", why = "Lekka i tania opcja na krótkie wyjścia.", query = "rubber dog booties" },
+  { label = "Wosk ochronny do łap", why = "Alternatywa lub dodatkowa warstwa pod buty.", query = "dog paw protection wax" },
+]
+faq = [
+  { q = "Mój pies nie chce chodzić w butach. Czy to normalne?", a = "Tak, na początku. Rób krótkie sesje, używaj nagród i sprawdź, czy rzep nie jest za luźny ani za ciasny." },
+  { q = "Skąd wiem, że rozmiar jest dobry?", a = "But nie powinien obracać się na łapie ani zsuwać przy delikatnym pociągnięciu. Jeśli wahasz się między dwoma rozmiarami, kieruj się zaleceniem producenta." },
+]
+
+[[guide]]
+slug = "kurtka-zimowa-dla-psa"
+icon = "🧥"
+title = "Kurtka zimowa dla psa: prosty poradnik, jak wybrać właściwą"
+description = "Osłona brzucha, wodoodporność, wymiary: co sprawdzić przed zakupem."
+intro = "Nie każdy pies potrzebuje kurtki. Ale małym psom, rasom krótkowłosym, seniorom i zmarzluchom dobra kurtka bardzo umila zimowe spacery."
+sections = [
+  { h = "Czy Twój pies jej potrzebuje?", p = ["Rasy północne z podwójną sierścią zwykle radzą sobie bez niej. Psy małe, krótkowłose lub starsze częściej marzną. W razie wątpliwości zapytaj weterynarza."] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Osłona brzucha: u małych psów to on dotyka śniegu.",
+      "Wodoodporna warstwa zewnętrzna i ciepła podszewka (polar lub pikowanie).",
+      "Otwór na szelki, jeśli spacerujesz z psem na szelkach.",
+      "Elementy odblaskowe: zimą szybko robi się ciemno.",
+      "Możliwość prania w pralce.",
+  ] },
+  { h = "Jak zmierzyć psa", bullets = [
+      "Długość grzbietu: od nasady szyi do nasady ogona.",
+      "Obwód klatki: w najszerszym miejscu, tuż za przednimi łapami.",
+      "Obwód szyi: tam, gdzie leży obroża.",
+  ] },
+]
+picks = [
+  { label = "Wodoodporne kurtki z podszewką", why = "Dobry punkt wyjścia dla większości psów.", query = "waterproof winter dog coat lined" },
+  { label = "Kurtki z osłoną brzucha", why = "Dla małych psów blisko śniegu.", query = "dog winter coat belly coverage" },
+  { label = "Kurtki odblaskowe", why = "Na spacery po zmroku.", query = "reflective dog winter coat" },
+]
+faq = [
+  { q = "Czy kurtka powinna być obcisła?", a = "Dopasowana, ale nie krępująca ruchów: pod paskami powinny zmieścić się dwa palce." },
+]
+
+[[guide]]
+slug = "ogrzewacze-do-rak"
+icon = "🔥"
+title = "Ogrzewacze do rąk na akumulator: co się liczy na zimowych spacerach z psem"
+description = "Czas pracy, format, ładowanie i bezpieczeństwo: jak porównać elektryczne ogrzewacze do rąk."
+intro = "Gdy w mróz trzymasz smycz, pierwsze poddają się dłonie. Ogrzewacze na akumulator mogą zastąpić jednorazowe, jeśli dobrze je porównasz."
+sections = [
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Pojemność (mAh): więcej to dłuższa praca, ale cięższe urządzenie.",
+      "Deklarowany czas pracy mierzy się w idealnych warunkach. W prawdziwym mrozie będzie krótszy.",
+      "Kilka poziomów grzania: pomaga oszczędzać baterię.",
+      "Zestawy dwuczęściowe (często magnetyczne): po jednym do każdej ręki lub kieszeni.",
+      "Ładowanie przez USB-C i funkcja powerbanku do telefonu.",
+  ] },
+  { h = "Bezpieczeństwo", bullets = [
+      "Wybieraj markę, która jasno podaje certyfikaty i oferuje obsługę klienta.",
+      "Przestrzegaj instrukcji: nie trzymaj urządzenia długo bezpośrednio przy skórze.",
+      "Nie zostawiaj go podczas ładowania bez nadzoru i przestań używać, jeśli puchnie lub nadmiernie się nagrzewa.",
+  ] },
+  { h = "Na akumulator czy jednorazowe?", p = ["Jednorazowe ogrzewacze są tanie w sztuce, ale przez całą zimę koszt rośnie. Model na akumulator kosztuje więcej na start, ale wystarcza na cały sezon."] },
+]
+picks = [
+  { label = "Magnetyczne pary na akumulator", why = "Po jednym do każdej ręki, wygodne na spacerach.", query = "rechargeable hand warmers 2 pack magnetic" },
+  { label = "Modele USB-C z powerbankiem", why = "Jeden kabel do wszystkiego.", query = "rechargeable hand warmer usb c power bank" },
+  { label = "Ciepłe rękawiczki dotykowe", why = "Idealne uzupełnienie ogrzewaczy.", query = "warm winter gloves touchscreen" },
+]
+faq = [
+  { q = "Jak długo działa jedno ładowanie?", a = "To zależy od modelu i poziomu grzania. Sprawdź czas pracy na najniższym poziomie w danych producenta i licz się z krótszym czasem w dużym mrozie." },
+]
+
+[[guide]]
+slug = "siersc-zwierzat-w-domu"
+icon = "🧹"
+title = "Sierść wszędzie: akcesoria, które naprawdę działają"
+description = "Rolki wielorazowe, gumowe szczotki, rękawice, odkurzacze: co wybrać w Twojej sytuacji."
+intro = "Wiosenne i jesienne linienie, kanapa, ciemne ubrania… Są proste akcesoria, które pomagają odzyskać kontrolę bez kupowania co tydzień klejących wkładów."
+sections = [
+  { h = "Zacznij od źródła", p = ["Regularne szczotkowanie usuwa luźną sierść, zanim trafi na meble. To najskuteczniejszy krok, zwłaszcza w okresie linienia."] },
+  { h = "Akcesoria według zastosowania", bullets = [
+      "Rolka wielorazowa z pojemnikiem: do kanap i poduszek, bez wkładów.",
+      "Gumowa szczotka lub ściągaczka: dobrze działa na dywanach i krótkim włosiu.",
+      "Rękawica do pielęgnacji: dla zwierząt, które nie lubią szczotek.",
+      "Szczotka narożna dla kota: mocowana w rogu ściany, kot się o nią ociera i zostawia na niej sierść.",
+      "Odkurzacz z turboszczotką do sierści: najskuteczniejsza inwestycja przy dużych powierzchniach.",
+  ] },
+]
+picks = [
+  { label = "Wielorazowe rolki do sierści", why = "Do mebli, bez wkładów.", query = "reusable pet hair remover roller" },
+  { label = "Szczotki narożne dla kota", why = "Kot czesze się sam.", query = "cat corner self groomer brush" },
+  { label = "Rękawice do pielęgnacji", why = "Dla zwierząt, które uciekają przed szczotką.", query = "pet grooming glove" },
+]
+faq = [
+  { q = "Czy rolka wielorazowa może zniszczyć materiał?", a = "Zwykle nadaje się do tapicerki. Przy delikatnych tkaninach najpierw przetestuj ją w niewidocznym miejscu." },
+]
+
+[[guide]]
+slug = "prezenty-swiateczne-dla-zwierzat"
+icon = "🎁"
+title = "Pomysły na świąteczne prezenty dla zwierząt i ich opiekunów"
+description = "Praktyczne i trwałe pomysły na święta, od zabawek węchowych po portrety zwierząt na zamówienie."
+intro = "Najbardziej doceniane prezenty to często te, których używa się przez cały rok. Oto pomysły według rodzaju i co sprawdzić przed zakupem."
+sections = [
+  { h = "Przed zakupem", bullets = [
+      "Dopasuj wielkość zabawki do wielkości zwierzęcia, żeby uniknąć ryzyka zadławienia.",
+      "Nadzoruj pierwsze zabawy nową zabawką.",
+      "Na święta sprawdź przed zamówieniem przewidywaną datę dostawy: wysyłka z zagranicy może trwać kilka tygodni.",
+  ] },
+]
+picks = [
+  { label = "Portret zwierzaka na zamówienie", why = "Wyjątkowy prezent dla opiekuna.", query = "custom pet portrait" },
+  { label = "Maty węchowe i zabawki logiczne", why = "Zajęcie na zimowe dni w domu.", query = "snuffle mat for dogs" },
+  { label = "Fontanna dla kota", why = "Wiele kotów chętniej pije bieżącą wodę.", query = "cat water fountain" },
+  { label = "Zmywalny pokrowiec na kanapę", why = "Chroni kanapę i można go prać.", query = "waterproof couch cover for pets" },
+]
+faq = [
+  { q = "Czy prezenty dotrą przed świętami?", a = "Czas dostawy zależy od sprzedawcy. Przewidywana data jest podana na AliExpress przed zamówieniem: sprawdź ją i zamawiaj wcześnie." },
+]
+
+[[guide]]
+slug = "legowisko-grzewcze-dla-psa-kota"
+icon = "🛏️"
+title = "Legowisko lub mata grzewcza: jak wybrać i bezpiecznie używać"
+description = "Elektryczna czy samogrzejąca, moc, bezpieczeństwo kabla: co sprawdzić przed zakupem."
+intro = "Starsze koty, małe psy i zwierzęta śpiące przy oknie uwielbiają zimą cieplejsze posłanie. Są dwa główne rodzaje mat: elektryczne i samogrzejące. Oto jak wybrać."
+sections = [
+  { h = "Elektryczna czy samogrzejąca?", bullets = [
+      "Samogrzejąca (bez prądu): warstwa izolacyjna odbija ciepło ciała zwierzęcia. Bez kabla i bez ryzyka elektrycznego: najlepszy początek.",
+      "Elektryczna: wyraźniejsze ciepło, przydatne dla zwierzęcia starszego, po zabiegu lub w zimnym pokoju. Wymaga więcej ostrożności.",
+  ] },
+  { h = "Na co zwrócić uwagę (modele elektryczne)", bullets = [
+      "Niska moc i łagodne ciepło, zbliżone do temperatury ciała zwierzęcia.",
+      "Automatyczne wyłączanie lub termostat chroniący przed przegrzaniem.",
+      "Osłona kabla odporna na gryzienie, zwłaszcza przy szczeniętach i kociętach.",
+      "Uznany certyfikat bezpieczeństwa (np. oznaczenie CE) i jasna instrukcja.",
+      "Zdejmowany pokrowiec do prania.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Zawsze zostaw obok miejsce bez ogrzewania, żeby zwierzę mogło się odsunąć, gdy jest mu za ciepło.",
+      "Regularnie sprawdzaj kabel i przestań używać maty, jeśli jest uszkodzony.",
+      "W przypadku zwierząt bardzo młodych, bardzo starych lub unieruchomionych zapytaj weterynarza.",
+  ] },
+]
+picks = [
+  { label = "Samogrzejące maty dla zwierząt", why = "Bez prądu: najprostsze i najbezpieczniejsze.", query = "self warming pet pad" },
+  { label = "Maty grzewcze z termostatem", why = "Dla starszych lub marznących zwierząt.", query = "heated pet pad thermostat" },
+  { label = "Przytulne legowiska zimowe", why = "Wysokie boki i gruby spód od zimnej podłogi.", query = "cozy pet bed high sides" },
+]
+faq = [
+  { q = "Czy mata grzewcza może być włączona całą noc?", a = "Przestrzegaj instrukcji producenta. Lepszy jest model z automatycznym wyłączaniem lub termostatem, a zwierzę powinno móc zejść z ciepłego miejsca." },
+]
+
+[[guide]]
+slug = "kalendarz-adwentowy-dla-psa-kota"
+icon = "🎄"
+title = "Kalendarz adwentowy dla psa lub kota: jak wybrać dobry"
+description = "Smakołyki czy zabawki, skład, rozmiar: nasza lista kontrolna kalendarza adwentowego dla Twojego zwierzaka."
+intro = "Kalendarze adwentowe dla zwierząt stały się grudniową klasyką. Nie wszystkie są jednakowe: oto co sprawdzić przed zamówieniem i kiedy zamawiać."
+sections = [
+  { h = "Zamów wcześnie", p = ["Kalendarze adwentowe są sezonowe: najpopularniejsze często znikają w listopadzie. Żeby otworzyć go 1 grudnia, zamów najpóźniej w połowie listopada, a przy wysyłce z zagranicy jeszcze wcześniej."] },
+  { h = "Smakołyki czy zabawki?", bullets = [
+      "Smakołyki: sprawdź skład, zwłaszcza jeśli zwierzę ma alergie lub specjalną dietę.",
+      "Zabawki: upewnij się, że pasują do wielkości zwierzęcia, żeby uniknąć zadławienia.",
+      "Mieszane: dobry kompromis, często nieco droższy.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Kalendarz dla właściwego gatunku: smakołyki dla psa nie pasują kotu i odwrotnie.",
+      "Rozsądne porcje: smakołyki wliczają się do dziennej racji.",
+      "Data przydatności obejmująca cały grudzień.",
+  ] },
+]
+picks = [
+  { label = "Kalendarze adwentowe dla psa", why = "Smakołyki lub zabawki na grudzień.", query = "dog advent calendar" },
+  { label = "Kalendarze adwentowe dla kota", why = "Dopasowane do potrzeb kotów.", query = "cat advent calendar" },
+  { label = "Zabawki dla psa na prezent", why = "Żeby samodzielnie stworzyć kalendarz.", query = "dog toys set" },
+]
+faq = [
+  { q = "Czy zwierzę może dostawać smakołyk codziennie?", a = "Tak, jeśli porcje są małe i odliczasz je od dziennej racji. W razie wątpliwości zapytaj weterynarza." },
+]
+
+[[guide]]
+slug = "swiecaca-obroza-spacery-noca"
+icon = "🔦"
+title = "Świecące obroże i latarki czołowe: widzieć i być widocznym na nocnych spacerach"
+description = "Świecąca obroża lub szelki, latarka czołowa, kamizelka odblaskowa: jak bezpiecznie spacerować z psem, gdy wcześnie robi się ciemno."
+intro = "Po zmianie czasu wieczorny spacer często odbywa się po ciemku. Pies o ciemnej sierści staje się niemal niewidoczny dla kierowców i rowerzystów. Kilka prostych akcesoriów wszystko zmienia."
+sections = [
+  { h = "Spraw, by pies był widoczny", bullets = [
+      "Świecąca obroża lub szelki LED: wybierz model ładowany przez USB, z trybem stałym i migającym.",
+      "Sprawdź deklarowaną wodoodporność (deszcz, kałuże) i czas pracy baterii.",
+      "Lampka przypinana do obecnej obroży to tani sposób na początek.",
+      "Kamizelka lub kurtka z pasami odblaskowymi uzupełnia światło, odbijając reflektory.",
+  ] },
+  { h = "Widzieć, gdzie idziesz", bullets = [
+      "Latarka czołowa zostawia obie ręce wolne na smycz i woreczki.",
+      "Wybierz model na akumulator z kilkoma poziomami jasności i czerwonym trybem, który nie oślepia innych.",
+      "Także dla Ciebie opaska lub kurtka odblaskowa pomaga przy drogach. Poza terenem zabudowanym po zmroku odblaski są w Polsce obowiązkowe dla pieszych.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Ładuj wszystko o stałej porze, na przykład po wieczornym spacerze.",
+      "Przy drogach trzymaj psa na smyczy, nawet gdy jest widoczny.",
+      "W miarę możliwości wybieraj oświetlone trasy.",
+  ] },
+]
+picks = [
+  { label = "Świecące obroże na akumulator", why = "Widoczne z daleka, nawet w deszczu.", query = "light up dog collar rechargeable" },
+  { label = "Latarki czołowe na akumulator", why = "Ręce wolne na smycz.", query = "rechargeable headlamp" },
+  { label = "Kamizelki odblaskowe dla psa", why = "Idealne uzupełnienie światła.", query = "reflective dog vest" },
+]
+faq = [
+  { q = "Czy miganie przeszkadza psu?", a = "Światło jest na szyi lub szelkach, poza bezpośrednim polem widzenia psa. Jeśli pies wydaje się zaniepokojony, użyj trybu stałego." },
+]
+
+[[guide]]
+slug = "zabawki-wechowe-dla-psa-deszczowe-dni"
+icon = "🧩"
+title = "Zabawki angażujące: jak zająć psa w deszczowe dni"
+description = "Maty węchowe, zabawki na smakołyki, łamigłówki: jak spożytkować energię psa w domu przy złej pogodzie."
+intro = "Gdy leje lub już po południu jest ciemno, spacery się skracają. Znudzony pies szybko zaczyna gryźć, co znajdzie. Zabawy angażujące nos i głowę często męczą psa tak samo jak spacer."
+sections = [
+  { h = "Główne rodzaje zabaw", bullets = [
+      "Maty węchowe: schowaj karmę w fałdach i pozwól psu ją wywęszyć.",
+      "Zabawki na smakołyki: piłka lub kostka, która wypuszcza smakołyki, gdy pies ją toczy.",
+      "Łamigłówki: klapki do podnoszenia i elementy do przesuwania, z kilkoma poziomami trudności.",
+      "Zabawki do napełniania i mrożenia: zajmują psa na długo, idealne podczas pracy z domu.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Rozmiar dopasowany do psa: na tyle duży, żeby nie dało się go połknąć.",
+      "Wytrzymały materiał dla psów, które mocno gryzą, i łatwe czyszczenie (zmywarka lub pralka).",
+      "Poziom trudności: zacznij od łatwego, żeby pies szybko odniósł sukces, potem go podnoś.",
+      "Antypoślizgowy spód łamigłówek, żeby nie jeździły po podłodze.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Używaj części dziennej racji karmy zamiast dodatkowych smakołyków.",
+      "Bądź w pobliżu przy pierwszych zabawach i schowaj zabawkę, jeśli zaczyna się psuć.",
+      "Zmieniaj zabawy z dnia na dzień, żeby były ciekawe.",
+  ] },
+]
+picks = [
+  { label = "Maty węchowe", why = "Najprostszy sposób, żeby nos zaczął pracować.", query = "snuffle mat for dogs" },
+  { label = "Zabawki na smakołyki", why = "Dla psów, które lubią pchać i toczyć.", query = "treat dispensing dog toy" },
+  { label = "Łamigłówki dla psa", why = "Dla bystrych psów, które szybko się nudzą.", query = "dog puzzle toy" },
+]
+faq = [
+  { q = "Ile czasu dziennie?", a = "Dwie lub trzy sesje po 10–15 minut często wystarczą, żeby zmęczyć psa, oprócz spacerów." },
+]

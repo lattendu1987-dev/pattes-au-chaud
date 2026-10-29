@@ -60,7 +60,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="top">
   <a class="brand" href="./"><span aria-hidden="true">🐾</span> {e(site['name'])}</a>
-  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="meilleures-ventes.html">Top ventes</a><a href="a-propos.html">À propos</a><a href="en/">EN</a></nav>
+  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="meilleures-ventes.html">Top ventes</a><a href="a-propos.html">À propos</a><a href="en/">EN</a><a href="pl/">PL</a></nav>
 </header>
 <div class="disclosure" role="note">{e(DISCLOSURE)} <a href="divulgation.html">En savoir plus</a></div>
 <main id="contenu">
@@ -324,6 +324,8 @@ def build(out_dir: Path | None = None) -> Path:
     urls.append(f"{base}meilleures-ventes.html")
     from . import site_en
     urls += site_en.build(out / "en")
+    from . import site_pl
+    urls += site_pl.build(out / "pl")
     sitemap = "\n".join(f"  <url><loc>{e(u)}</loc><lastmod>{site['updated']}</lastmod></url>" for u in urls)
     (out / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n',

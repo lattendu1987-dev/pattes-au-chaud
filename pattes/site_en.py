@@ -51,7 +51,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <a class="skip" href="#content">Skip to content</a>
 <header class="top">
   <a class="brand" href="./"><span aria-hidden="true">🐾</span> {e(site['name'])}</a>
-  <nav aria-label="Main"><a href="./#guides">Guides</a><a href="best-sellers.html">Best sellers</a><a href="about.html">About</a><a href="../">FR</a></nav>
+  <nav aria-label="Main"><a href="./#guides">Guides</a><a href="best-sellers.html">Best sellers</a><a href="about.html">About</a><a href="../">FR</a><a href="../pl/">PL</a></nav>
 </header>
 <div class="disclosure" role="note">{e(DISCLOSURE)} <a href="disclosure.html">Learn more</a></div>
 <main id="content">

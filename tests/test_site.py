@@ -102,3 +102,23 @@ class StoresTest(unittest.TestCase):
         self.assertIn('"GB":{"d":"www.amazon.co.uk","t":"warmpawsuk-21"}', js)
         self.assertIn('"US"', js)
         self.assertIn("warmpawsuk06-21", js)
+
+
+class PolishSiteTest(unittest.TestCase):
+    def test_polish_pages(self):
+        from pattes.site_pl import DISCLOSURE as PL, aliexpress_url
+        out = build(Path(tempfile.mkdtemp()) / "public")
+        pl = out / "pl"
+        for g in config.load_toml("site_pl.toml")["guide"]:
+            html = (pl / f"{g['slug']}.html").read_text(encoding="utf-8")
+            self.assertIn(e(PL), html)
+            self.assertIn("aliexpress", html)
+            self.assertIn('rel="sponsored nofollow noopener"', html)
+            self.assertNotRegex(html, r"\d+[,.]\d{2}\s?(zł|PLN|[$€])")
+        self.assertIn("/pl/", (out / "sitemap.xml").read_text(encoding="utf-8"))
+
+    def test_awin_link(self):
+        from pattes.site_pl import aliexpress_url
+        self.assertEqual(aliexpress_url("dog boots", "", "1"), "https://pl.aliexpress.com/w/wholesale-dog-boots.html")
+        u = aliexpress_url("dog boots", "123", "3138840")
+        self.assertTrue(u.startswith("https://www.awin1.com/cread.php?awinmid=123&awinaffid=3138840&ued=https%3A%2F%2Fpl.aliexpress.com"))
