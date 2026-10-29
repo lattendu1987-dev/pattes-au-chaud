@@ -71,6 +71,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
   <p><a href="divulgation.html">Divulgation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="a-propos.html">À propos</a></p>
   <p class="muted">Mis à jour le {e(site['updated'])}. Amazon et le logo Amazon sont des marques d'Amazon.com, Inc. ou de ses filiales.</p>
 </footer>
+<script src="stores.js" defer></script>
 <script src="app.js" defer></script>
 </body>
 </html>
@@ -316,6 +317,7 @@ def build(out_dir: Path | None = None) -> Path:
 
     base = site["base_url"].rstrip("/") + "/"
     from . import bestsellers
+    (out / "stores.js").write_text(bestsellers.stores_js(), encoding="utf-8")
     bs = bestsellers.TEXT["fr"]
     (out / "meilleures-ventes.html").write_text(page(site, bs["title"], bs["desc"], bestsellers.body("fr", "www.amazon.fr"), "meilleures-ventes.html"), encoding="utf-8")
     urls = [base] + [f"{base}{g['slug']}.html" for g in guides] + [f"{base}{n}" for n in STATIC_PAGES if n != "404.html"]

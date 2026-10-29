@@ -93,3 +93,12 @@ class BestSellersTest(unittest.TestCase):
         self.assertIn('rel="sponsored nofollow noopener"', fr)
         self.assertLess(fr.index("amazon.fr/gp"), fr.index("amazon.com/gp"))
         self.assertLess(en.index("amazon.com/gp"), en.index("amazon.fr/gp"))
+
+
+class StoresTest(unittest.TestCase):
+    def test_stores_js_only_tagged(self):
+        out = build(Path(tempfile.mkdtemp()) / "public")
+        js = (out / "stores.js").read_text(encoding="utf-8")
+        self.assertIn('"GB":{"d":"www.amazon.co.uk","t":"warmpawsuk-21"}', js)
+        self.assertIn('"US"', js)
+        self.assertNotIn('"DE"', js)  # pas encore d'identifiant allemand

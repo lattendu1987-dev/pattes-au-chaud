@@ -11,6 +11,7 @@ lists = [
 
 [[store]]
 domain = "www.amazon.fr"
+region = "FR"
 fr = "France"
 en = "France"
 flag = "🇫🇷"
@@ -18,6 +19,7 @@ tag = "pattesauchaud-21"
 
 [[store]]
 domain = "www.amazon.com"
+region = "US"
 fr = "États-Unis"
 en = "United States"
 flag = "🇺🇸"
@@ -25,6 +27,7 @@ tag = "warmpaws-20"
 
 [[store]]
 domain = "www.amazon.ca"
+region = "CA"
 fr = "Canada"
 en = "Canada"
 flag = "🇨🇦"
@@ -32,13 +35,15 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.co.uk"
+region = "GB"
 fr = "Royaume-Uni"
 en = "United Kingdom"
 flag = "🇬🇧"
-tag = ""
+tag = "warmpawsuk-21"
 
 [[store]]
 domain = "www.amazon.de"
+region = "DE"
 fr = "Allemagne"
 en = "Germany"
 flag = "🇩🇪"
@@ -46,6 +51,7 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.es"
+region = "ES"
 fr = "Espagne"
 en = "Spain"
 flag = "🇪🇸"
@@ -53,6 +59,7 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.it"
+region = "IT"
 fr = "Italie"
 en = "Italy"
 flag = "🇮🇹"
@@ -60,6 +67,7 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.com.be"
+region = "BE"
 fr = "Belgique"
 en = "Belgium"
 flag = "🇧🇪"
@@ -67,6 +75,7 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.nl"
+region = "NL"
 fr = "Pays-Bas"
 en = "Netherlands"
 flag = "🇳🇱"
@@ -74,6 +83,7 @@ tag = ""
 
 [[store]]
 domain = "www.amazon.com.au"
+region = "AU"
 fr = "Australie"
 en = "Australia"
 flag = "🇦🇺"

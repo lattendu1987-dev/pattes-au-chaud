@@ -62,6 +62,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
   <p><a href="disclosure.html">Disclosure</a> · <a href="privacy.html">Privacy</a> · <a href="about.html">About</a> · <a href="../">Version française</a></p>
   <p class="muted">Updated {e(site['updated'])}. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
 </footer>
+<script src="../stores.js" defer></script>
 <script src="../app.js" defer></script>
 </body>
 </html>

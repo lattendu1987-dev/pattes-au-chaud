@@ -49,3 +49,11 @@ def body(lang: str, first: str) -> str:
 {''.join(cards)}
 <p class="muted small">{e(t['note'])}</p>
 </article>"""
+
+
+def stores_js() -> str:
+    """Boutiques Amazon pour lesquelles un identifiant Partenaire existe, par pays du visiteur."""
+    import json
+    data = config.load_toml("bestsellers.toml")
+    m = {s["region"]: {"d": s["domain"], "t": s["tag"]} for s in data["store"] if s.get("tag") and s.get("region")}
+    return "window.PAC_STORES = " + json.dumps(m, separators=(",", ":")) + ";\n"
