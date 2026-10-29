@@ -101,4 +101,4 @@ class StoresTest(unittest.TestCase):
         js = (out / "stores.js").read_text(encoding="utf-8")
         self.assertIn('"GB":{"d":"www.amazon.co.uk","t":"warmpawsuk-21"}', js)
         self.assertIn('"US"', js)
-        self.assertNotIn('"DE"', js)  # pas encore d'identifiant allemand
+        self.assertIn("warmpawsuk06-21", js)
