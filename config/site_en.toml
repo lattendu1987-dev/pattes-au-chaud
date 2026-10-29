@@ -218,6 +218,7 @@ faq = [
 
 [[guide]]
 slug = "light-up-collar-night-walks"
+date = "2026-10-23"
 icon = "🔦"
 title = "Light-up collars and headlamps: see and be seen on night walks"
 description = "Light-up collar or harness, headlamp, reflective vest: how to walk your dog safely when it gets dark early."
@@ -251,6 +252,7 @@ faq = [
 
 [[guide]]
 slug = "dog-enrichment-toys-rainy-days"
+date = "2026-10-27"
 icon = "🧩"
 title = "Enrichment toys: keeping your dog busy on rainy days"
 description = "Snuffle mats, treat-dispensing toys, puzzles: how to burn your dog's energy indoors when the weather is bad."

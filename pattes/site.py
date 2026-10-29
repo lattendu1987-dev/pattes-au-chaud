@@ -201,7 +201,8 @@ def kit_page(site: dict, guides: list[dict]) -> str:
 <h2>Épingles automatiques (Pinterest)</h2><section class="kit reveal">
 <p>Sur pinterest.fr (version ordinateur) : Paramètres → « Importer du contenu » / « Création d'Épingles en masse » → importez le fichier.</p>
 <p><a class="btn btn-small" href="epingles-toutes.csv" download>Fichier : toutes les épingles</a></p>
-<p><a class="btn btn-small" href="epingles-semaine.csv" download>Fichier : épingles de la semaine</a></p></section>
+<p><a class="btn btn-small" href="epingles-semaine.csv" download>Fichier : épingles de la semaine (FR + EN)</a></p>
+<p><a class="btn btn-small" href="epingles-anglais-toutes.csv" download>Fichier : toutes les épingles en anglais</a></p></section>
 <h2>Photo de profil</h2><section class="kit reveal"><img src="logo.png" alt="Logo Pattes au chaud" width="800" height="800" style="max-width:240px"><p><a class="btn btn-small" href="logo.png" download>Enregistrer le logo</a></p></section>
 <h2>Messages Facebook</h2>{posts}
 <h2>Épingles Pinterest</h2>{"".join(pins)}</article>
@@ -213,30 +214,47 @@ var t=b.previousElementSibling.innerText;(navigator.clipboard?navigator.clipboar
 
 BOARDS = {"cadeaux-noel-animaux": "Noël des animaux", "calendrier-avent-chien-chat": "Noël des animaux"}
 DEFAULT_BOARD = "Hiver avec son chien"
+EN_BOARD = "Warm Paws - Pet Buying Guides"
+DEFAULT_DATE = "2026-10-20"
 
 
-def pins_csv(site: dict, guides: list[dict], since: str | None = None) -> str:
-    """Fichier pour « Création d'Épingles en masse » de Pinterest (import .csv)."""
-    import csv, io
+def pins_rows(site: dict, guides: list[dict], since: str | None = None, *, lang: str = "fr") -> list[list[str]]:
+    """Lignes pour « Création d'Épingles en masse » de Pinterest."""
     base = site["base_url"].rstrip("/") + "/"
+    if lang == "en":
+        img_base = base.rsplit("en/", 1)[0] + "pins/en/"
+        sep, suffix, board_of = ":", " Free guide, no fake reviews.", (lambda s: EN_BOARD)
+        keywords = "dog, cat, pets, winter, buying guide"
+    else:
+        img_base = base + "pins/"
+        sep, suffix, board_of = " : ", " Guide gratuit, sans faux avis.", (lambda s: BOARDS.get(s, DEFAULT_BOARD))
+        keywords = "chien, chat, animaux, hiver, guide d'achat"
+    rows = []
+    for g in sorted(guides, key=lambda g: g.get("date", DEFAULT_DATE)):
+        if g.get("epingle_manuelle"):
+            continue
+        if since and g.get("date", DEFAULT_DATE) < since:
+            continue
+        rows.append([
+            g["title"].split(sep)[0].strip()[:100],
+            f"{img_base}{g['slug']}.png",
+            board_of(g["slug"]),
+            "",
+            (g["description"] + suffix)[:500],
+            f"{base}{g['slug']}.html",
+            "",
+            keywords,
+        ])
+    return rows
+
+
+def pins_csv(*parts: list[list[str]]) -> str:
+    import csv, io
     buf = io.StringIO()
     w = csv.writer(buf)
     w.writerow(["Title", "Media URL", "Pinterest board", "Thumbnail", "Description", "Link", "Publish date", "Keywords"])
-    for g in sorted(guides, key=lambda g: g.get("date", site["updated"])):
-        if g.get("epingle_manuelle"):
-            continue
-        if since and g.get("date", site["updated"]) < since:
-            continue
-        w.writerow([
-            g["title"].split(" : ")[0][:100],
-            f"{base}pins/{g['slug']}.png",
-            BOARDS.get(g["slug"], DEFAULT_BOARD),
-            "",
-            (g["description"] + " Guide gratuit, sans faux avis.")[:500],
-            f"{base}{g['slug']}.html",
-            "",
-            "chien, chat, animaux, hiver, guide d'achat",
-        ])
+    for rows in parts:
+        w.writerows(rows)
     return buf.getvalue()
 
 
@@ -310,8 +328,12 @@ def build(out_dir: Path | None = None) -> Path:
     upd = date.fromisoformat(site["updated"])
     last_saturday = upd - timedelta(days=((upd.weekday() - 5) % 7) or 7)
     week_ago = (last_saturday + timedelta(days=1)).isoformat()
-    (out / "epingles-toutes.csv").write_text(pins_csv(site, guides), encoding="utf-8")
-    (out / "epingles-semaine.csv").write_text(pins_csv(site, guides, since=week_ago), encoding="utf-8")
+    en = config.load_toml("site_en.toml")
+    (out / "epingles-toutes.csv").write_text(pins_csv(pins_rows(site, guides)), encoding="utf-8")
+    (out / "epingles-anglais-toutes.csv").write_text(pins_csv(pins_rows(en["site"], en["guide"], lang="en")), encoding="utf-8")
+    (out / "epingles-semaine.csv").write_text(pins_csv(
+        pins_rows(site, guides, since=week_ago),
+        pins_rows(en["site"], en["guide"], since=week_ago, lang="en")), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /kit-partage.html\nSitemap: {base}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     return out

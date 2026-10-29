@@ -22,7 +22,7 @@ def amazon_url(query: str, tag: str, domain: str) -> str:
     return f"{url}&tag={quote_plus(tag)}" if tag else url
 
 
-def page(site: dict, title: str, description: str, body: str, path: str) -> str:
+def page(site: dict, title: str, description: str, body: str, path: str, image: str = "") -> str:
     full_title = title if title == site["name"] else f"{title} · {site['name']}"
     canonical = site["base_url"].rstrip("/") + "/" + ("" if path == "index.html" else path)
     fr_home = site["base_url"].rstrip("/").rsplit("/en", 1)[0] + "/"
@@ -40,7 +40,7 @@ def page(site: dict, title: str, description: str, body: str, path: str) -> str:
 <meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{e(canonical)}">
-<meta property="og:image" content="{e(fr_home + 'logo.png')}">
+<meta property="og:image" content="{e(fr_home + ('pins/en/' + image + '.png' if image else 'logo.png'))}">
 <meta property="og:locale" content="en_US">
 <meta name="theme-color" content="#14243a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
@@ -162,7 +162,7 @@ def build(out_dir: Path) -> list[str]:
     (out_dir / "index.html").write_text(page(site, site["name"], site["tagline"], index_body(site, guides), "index.html"), encoding="utf-8")
     for g in guides:
         name = f"{g['slug']}.html"
-        (out_dir / name).write_text(page(site, g["title"], g["description"], guide_body(site, g), name), encoding="utf-8")
+        (out_dir / name).write_text(page(site, g["title"], g["description"], guide_body(site, g), name, image=g["slug"]), encoding="utf-8")
     for name, (title, desc, body) in STATIC_PAGES.items():
         (out_dir / name).write_text(page(site, title, desc, body, name), encoding="utf-8")
     base = site["base_url"].rstrip("/") + "/"

@@ -33,8 +33,8 @@ p{{font-size:40px;line-height:1.4;margin:0;color:#dfe6ee}}
 .brand{{font-family:"DejaVu Serif",Georgia,serif;font-weight:700;font-size:44px}}
 .cta{{color:#f2b48f;font-weight:700}}
 </style></head><body><div class="snow"></div>
-<div><span class="tag">Guide d'achat</span><div class="icon">{icon}</div><h1>{title}</h1><p>{desc}</p></div>
-<div class="foot"><span class="brand">🐾 Pattes au chaud</span><span class="cta">Lire le guide →</span></div>
+<div><span class="tag">{tag}</span><div class="icon">{icon}</div><h1>{title}</h1><p>{desc}</p></div>
+<div class="foot"><span class="brand">🐾 {brand}</span><span class="cta">{cta}</span></div>
 </body></html>"""
 
 
@@ -46,21 +46,30 @@ def find_chrome(arg):
     raise SystemExit("Chrome/Chromium introuvable")
 
 
+VERSIONS = [
+    # (fichier de config, dossier de sortie, étiquette, marque, appel à l'action, séparateur du titre)
+    ("site.toml", "pins", "Guide d'achat", "Pattes au chaud", "Lire le guide →", " : "),
+    ("site_en.toml", "pins/en", "Buying guide", "Warm Paws", "Read the guide →", ":"),
+]
+
+
 def main():
     chrome = find_chrome(sys.argv[1] if len(sys.argv) > 1 else None)
-    out = ROOT / "static" / "pins"
-    out.mkdir(parents=True, exist_ok=True)
-    for g in load_toml("site.toml")["guide"]:
-        title = g["title"].split(" : ")[0]
-        size = 92 if len(title) < 40 else 80
-        page = TEMPLATE.format(icon=g["icon"], title=html.escape(title), desc=html.escape(g["description"]), size=size)
-        with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
-            f.write(page)
-        target = out / f"{g['slug']}.png"
-        subprocess.run([chrome, "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
-                        "--window-size=1000,1500", f"--screenshot={target}", f"file://{f.name}"],
-                       check=True, capture_output=True)
-        print(target.relative_to(ROOT))
+    for cfg, folder, tag, brand, cta, sep in VERSIONS:
+        out = ROOT / "static" / folder
+        out.mkdir(parents=True, exist_ok=True)
+        for g in load_toml(cfg)["guide"]:
+            title = g["title"].split(sep)[0].strip()
+            size = 92 if len(title) < 40 else 80
+            page = TEMPLATE.format(icon=g["icon"], title=html.escape(title), desc=html.escape(g["description"]),
+                                   size=size, tag=html.escape(tag), brand=html.escape(brand), cta=html.escape(cta))
+            with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
+                f.write(page)
+            target = out / f"{g['slug']}.png"
+            subprocess.run([chrome, "--headless", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
+                            "--window-size=1000,1500", f"--screenshot={target}", f"file://{f.name}"],
+                           check=True, capture_output=True)
+            print(target.relative_to(ROOT))
 
 
 if __name__ == "__main__":

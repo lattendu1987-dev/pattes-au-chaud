@@ -267,6 +267,8 @@ faq = [
 [[guide]]
 slug = "jouets-occupation-chien-pluie"
 date = "2026-10-27"
+# Déjà épinglé à la main le 29/10 : exclu des fichiers Pinterest.
+epingle_manuelle = true
 icon = "🧩"
 title = "Jouets d'occupation : occuper son chien les jours de pluie"
 description = "Tapis de fouille, jouets distributeurs, puzzles : les critères pour dépenser l'énergie de votre chien à la maison quand il fait mauvais."
