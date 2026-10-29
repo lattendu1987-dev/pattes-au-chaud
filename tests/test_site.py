@@ -22,6 +22,8 @@ class SiteTest(unittest.TestCase):
 
     def test_disclosure_on_every_page(self):
         for page in self.out.glob("*.html"):
+            if page.name.startswith("google"):
+                continue  # fichier de validation Google, pas une page du site
             self.assertIn(e(DISCLOSURE), page.read_text(encoding="utf-8"), page.name)
 
     def test_affiliate_links_are_marked_sponsored(self):
