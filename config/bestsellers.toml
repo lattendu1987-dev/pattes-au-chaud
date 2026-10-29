@@ -1,0 +1,80 @@
+# Classements officiels Amazon (mis à jour par Amazon, environ toutes les heures).
+# Aucun produit n'est copié : on renvoie vers les pages d'Amazon avec l'identifiant Partenaire.
+# tag vide = lien sans commission (pas encore inscrit au programme de ce pays).
+
+lists = [
+  { path = "gp/bestsellers/pet-supplies", fr = "Meilleures ventes", en = "Best sellers", icon = "🏆" },
+  { path = "gp/new-releases/pet-supplies", fr = "Nouveautés", en = "New releases", icon = "✨" },
+  { path = "gp/movers-and-shakers/pet-supplies", fr = "Plus fortes progressions", en = "Movers & shakers", icon = "📈" },
+  { path = "gp/most-wished-for/pet-supplies", fr = "Les plus souhaités", en = "Most wished for", icon = "💝" },
+]
+
+[[store]]
+domain = "www.amazon.fr"
+fr = "France"
+en = "France"
+flag = "🇫🇷"
+tag = "pattesauchaud-21"
+
+[[store]]
+domain = "www.amazon.com"
+fr = "États-Unis"
+en = "United States"
+flag = "🇺🇸"
+tag = "warmpaws-20"
+
+[[store]]
+domain = "www.amazon.ca"
+fr = "Canada"
+en = "Canada"
+flag = "🇨🇦"
+tag = ""
+
+[[store]]
+domain = "www.amazon.co.uk"
+fr = "Royaume-Uni"
+en = "United Kingdom"
+flag = "🇬🇧"
+tag = ""
+
+[[store]]
+domain = "www.amazon.de"
+fr = "Allemagne"
+en = "Germany"
+flag = "🇩🇪"
+tag = ""
+
+[[store]]
+domain = "www.amazon.es"
+fr = "Espagne"
+en = "Spain"
+flag = "🇪🇸"
+tag = ""
+
+[[store]]
+domain = "www.amazon.it"
+fr = "Italie"
+en = "Italy"
+flag = "🇮🇹"
+tag = ""
+
+[[store]]
+domain = "www.amazon.com.be"
+fr = "Belgique"
+en = "Belgium"
+flag = "🇧🇪"
+tag = ""
+
+[[store]]
+domain = "www.amazon.nl"
+fr = "Pays-Bas"
+en = "Netherlands"
+flag = "🇳🇱"
+tag = ""
+
+[[store]]
+domain = "www.amazon.com.au"
+fr = "Australie"
+en = "Australia"
+flag = "🇦🇺"
+tag = ""

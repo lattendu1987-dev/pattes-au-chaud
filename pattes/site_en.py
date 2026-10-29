@@ -51,7 +51,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <a class="skip" href="#content">Skip to content</a>
 <header class="top">
   <a class="brand" href="./"><span aria-hidden="true">🐾</span> {e(site['name'])}</a>
-  <nav aria-label="Main"><a href="./#guides">Guides</a><a href="about.html">About</a><a href="../">FR</a></nav>
+  <nav aria-label="Main"><a href="./#guides">Guides</a><a href="best-sellers.html">Best sellers</a><a href="about.html">About</a><a href="../">FR</a></nav>
 </header>
 <div class="disclosure" role="note">{e(DISCLOSURE)} <a href="disclosure.html">Learn more</a></div>
 <main id="content">
@@ -165,5 +165,8 @@ def build(out_dir: Path) -> list[str]:
         (out_dir / name).write_text(page(site, g["title"], g["description"], guide_body(site, g), name, image=g["slug"]), encoding="utf-8")
     for name, (title, desc, body) in STATIC_PAGES.items():
         (out_dir / name).write_text(page(site, title, desc, body, name), encoding="utf-8")
+    from . import bestsellers
+    bs = bestsellers.TEXT["en"]
+    (out_dir / "best-sellers.html").write_text(page(site, bs["title"], bs["desc"], bestsellers.body("en", "www.amazon.com"), "best-sellers.html"), encoding="utf-8")
     base = site["base_url"].rstrip("/") + "/"
-    return [base] + [f"{base}{g['slug']}.html" for g in guides] + [f"{base}{n}" for n in STATIC_PAGES]
+    return [base, f"{base}best-sellers.html"] + [f"{base}{g['slug']}.html" for g in guides] + [f"{base}{n}" for n in STATIC_PAGES]

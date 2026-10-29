@@ -60,7 +60,7 @@ def page(site: dict, title: str, description: str, body: str, path: str, image: 
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="top">
   <a class="brand" href="./"><span aria-hidden="true">🐾</span> {e(site['name'])}</a>
-  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="a-propos.html">À propos</a><a href="en/">EN</a></nav>
+  <nav aria-label="Navigation principale"><a href="./#guides">Guides</a><a href="meilleures-ventes.html">Top ventes</a><a href="a-propos.html">À propos</a><a href="en/">EN</a></nav>
 </header>
 <div class="disclosure" role="note">{e(DISCLOSURE)} <a href="divulgation.html">En savoir plus</a></div>
 <main id="contenu">
@@ -315,7 +315,11 @@ def build(out_dir: Path | None = None) -> Path:
         (out / name).write_text(page(site, title, desc, body, name), encoding="utf-8")
 
     base = site["base_url"].rstrip("/") + "/"
+    from . import bestsellers
+    bs = bestsellers.TEXT["fr"]
+    (out / "meilleures-ventes.html").write_text(page(site, bs["title"], bs["desc"], bestsellers.body("fr", "www.amazon.fr"), "meilleures-ventes.html"), encoding="utf-8")
     urls = [base] + [f"{base}{g['slug']}.html" for g in guides] + [f"{base}{n}" for n in STATIC_PAGES if n != "404.html"]
+    urls.append(f"{base}meilleures-ventes.html")
     from . import site_en
     urls += site_en.build(out / "en")
     sitemap = "\n".join(f"  <url><loc>{e(u)}</loc><lastmod>{site['updated']}</lastmod></url>" for u in urls)

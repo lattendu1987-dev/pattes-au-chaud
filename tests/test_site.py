@@ -81,3 +81,15 @@ class EnglishSiteTest(unittest.TestCase):
             self.assertIn("amazon.com/s?k=", html)
             self.assertNotRegex(html, r"\d+[,.]\d{2}\s?[$€£]")
         self.assertIn("/en/", (out / "sitemap.xml").read_text(encoding="utf-8"))
+
+
+class BestSellersTest(unittest.TestCase):
+    def test_pages_and_tags(self):
+        out = build(Path(tempfile.mkdtemp()) / "public")
+        fr = (out / "meilleures-ventes.html").read_text(encoding="utf-8")
+        en = (out / "en" / "best-sellers.html").read_text(encoding="utf-8")
+        self.assertIn("amazon.fr/gp/bestsellers/pet-supplies/?tag=pattesauchaud-21", fr)
+        self.assertIn("amazon.com/gp/bestsellers/pet-supplies/?tag=warmpaws-20", en)
+        self.assertIn('rel="sponsored nofollow noopener"', fr)
+        self.assertLess(fr.index("amazon.fr/gp"), fr.index("amazon.com/gp"))
+        self.assertLess(en.index("amazon.com/gp"), en.index("amazon.fr/gp"))
