@@ -6,7 +6,7 @@ name = "Ciepłe Łapki"
 tagline = "Poradniki zakupowe, dzięki którym Twój pies lub kot będzie miał wygodnie, zwłaszcza zimą."
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
-awin_mid = ""
+awin_mid = "12044"
 awin_affid = "3138840"
 updated = "2026-10-29"
 
