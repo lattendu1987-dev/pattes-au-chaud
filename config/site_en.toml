@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-10-27"
+updated = "2026-10-30"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -285,4 +285,39 @@ picks = [
 ]
 faq = [
   { q = "How much time per day?", a = "Two or three 10 to 15 minute sessions are often enough to tire a dog, on top of outings." },
+]
+
+[[guide]]
+slug = "dog-paw-cleaner-muddy-walks"
+date = "2026-10-30"
+icon = "🛁"
+title = "Muddy paws: the gear that keeps your home clean after walks"
+description = "Paw cleaner cups, microfiber towels, absorbent doormats: how to handle fall mud without spending ages on it."
+intro = "Rain, wet leaves and soggy trails: in fall, every walk can end with paw prints all over the house. With a few well-chosen items and a quick routine at the door, you keep the house clean without stressing your dog."
+sections = [
+  { h = "Time-saving gear", bullets = [
+      "Paw cleaner cup with silicone bristles: dip each paw with a little lukewarm water and the mud comes off in seconds.",
+      "Microfiber towel with hand pockets: far more absorbent than a regular towel.",
+      "Absorbent dog doormat: it traps water and dirt before they reach the rest of the house.",
+      "Dog drying robe: handy for large, long-haired dogs that come back soaked.",
+  ] },
+  { h = "What to check", bullets = [
+      "Cup size that matches your dog: a small one won't fit a big dog's paw.",
+      "Soft silicone with no sharp edges, easy to rinse.",
+      "Machine-washable towel and mat.",
+      "Non-slip backing on the mat to avoid slips on hard floors.",
+  ] },
+  { h = "A quick routine at the door", bullets = [
+      "Set the paw cleaner and towel by the door before you leave.",
+      "Reward your dog for cooperating: within days, many dogs lift their paw on their own.",
+      "Dry between the paw pads too, where moisture lingers longest.",
+  ] },
+]
+picks = [
+  { label = "Dog paw cleaner cups", why = "Mud gone in seconds.", query = "dog paw cleaner cup" },
+  { label = "Microfiber dog towels", why = "Fast drying after walks.", query = "microfiber dog towel absorbent" },
+  { label = "Absorbent dog doormats", why = "Stop water and mud at the door.", query = "absorbent dog doormat" },
+]
+faq = [
+  { q = "Should I use soap?", a = "Lukewarm water is usually enough. If you use a product, pick one made for dogs and rinse well." },
 ]

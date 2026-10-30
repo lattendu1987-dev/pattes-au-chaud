@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-10-29"
+updated = "2026-10-30"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -279,4 +279,38 @@ picks = [
 ]
 faq = [
   { q = "Ile czasu dziennie?", a = "Dwie lub trzy sesje po 10–15 minut często wystarczą, żeby zmęczyć psa, oprócz spacerów." },
+]
+
+[[guide]]
+slug = "czyszczenie-lap-psa-po-spacerze"
+icon = "🛁"
+title = "Błotniste łapy: akcesoria, dzięki którym dom zostaje czysty po spacerze"
+description = "Myjka do łap, ręcznik z mikrofibry, chłonna wycieraczka: jak poradzić sobie z jesiennym błotem bez tracenia czasu."
+intro = "Deszcz, mokre liście i rozmokłe ścieżki: jesienią każdy powrót ze spaceru może zostawić ślady w całym domu. Kilka dobrze dobranych akcesoriów i krótka rutyna przy drzwiach pozwalają utrzymać porządek bez stresu dla psa."
+sections = [
+  { h = "Akcesoria, które oszczędzają czas", bullets = [
+      "Myjka do łap (kubek z silikonowymi wypustkami): zanurz każdą łapę w odrobinie letniej wody, a błoto zejdzie w kilka sekund.",
+      "Ręcznik z mikrofibry z kieszeniami na dłonie: chłonie znacznie więcej niż zwykły ręcznik.",
+      "Chłonna wycieraczka dla psa: zatrzymuje wodę i ziemię, zanim trafią dalej do domu.",
+      "Szlafrok dla psa: przydatny dla dużych, długowłosych psów, które wracają przemoczone.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Rozmiar myjki dopasowany do psa: za mała nie zmieści łapy dużego psa.",
+      "Miękki silikon bez ostrych krawędzi, łatwy do opłukania.",
+      "Ręcznik i wycieraczka do prania w pralce.",
+      "Antypoślizgowy spód wycieraczki, żeby nie ślizgała się po płytkach.",
+  ] },
+  { h = "Krótka rutyna przy drzwiach", bullets = [
+      "Przygotuj myjkę i ręcznik przy drzwiach przed wyjściem.",
+      "Nagradzaj psa za współpracę: po kilku dniach wiele psów samo podaje łapę.",
+      "Osusz także przestrzenie między poduszkami łap, gdzie wilgoć utrzymuje się najdłużej.",
+  ] },
+]
+picks = [
+  { label = "Myjki do łap dla psa", why = "Błoto znika w kilka sekund.", query = "dog paw cleaner cup" },
+  { label = "Ręczniki z mikrofibry dla psa", why = "Szybkie suszenie po spacerze.", query = "microfiber dog towel" },
+  { label = "Chłonne wycieraczki dla psa", why = "Zatrzymują wodę i błoto przy drzwiach.", query = "absorbent dog door mat" },
+]
+faq = [
+  { q = "Czy trzeba używać mydła?", a = "Zwykle wystarczy letnia woda. Jeśli używasz środka, wybierz przeznaczony dla psów i dobrze spłucz." },
 ]
