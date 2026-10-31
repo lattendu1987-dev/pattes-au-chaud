@@ -201,6 +201,8 @@ faq = [
 
 [[guide]]
 slug = "calendrier-avent-chien-chat"
+# Image Pinterest personnalisée (fournie par le propriétaire) : ne pas régénérer.
+image_perso = true
 date = "2026-10-20"
 # Déjà épinglé à la main : exclu du flux Pinterest pour éviter un doublon.
 epingle_manuelle = true
@@ -266,6 +268,8 @@ faq = [
 
 [[guide]]
 slug = "jouets-occupation-chien-pluie"
+# Image Pinterest personnalisée (fournie par le propriétaire) : ne pas régénérer.
+image_perso = true
 date = "2026-10-27"
 # Déjà épinglé à la main le 29/10 : exclu des fichiers Pinterest.
 epingle_manuelle = true
