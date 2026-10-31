@@ -15,6 +15,8 @@ updated = "2026-10-30"
 
 [[guide]]
 slug = "bottes-chien-hiver"
+# Image Pinterest personnalisée (fournie par le propriétaire) : ne pas régénérer.
+image_perso = true
 date = "2026-10-20"
 # Déjà épinglé à la main : exclu du flux Pinterest pour éviter un doublon.
 epingle_manuelle = true
