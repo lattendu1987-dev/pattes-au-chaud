@@ -1,0 +1,42 @@
+{
+ "done": [
+  "fr:bottes-chien-hiver:a",
+  "fr:manteau-chien-hiver:a",
+  "fr:chauffe-mains-rechargeables:a",
+  "fr:poils-animaux-maison:a",
+  "fr:cadeaux-noel-animaux:a",
+  "fr:coussin-chauffant-chat-chien:a",
+  "fr:calendrier-avent-chien-chat:a",
+  "fr:collier-lumineux-promenade-nuit:a",
+  "fr:jouets-occupation-chien-pluie:a",
+  "fr:nettoyer-pattes-chien-boue:a",
+  "en:dog-boots-winter:a",
+  "en:dog-winter-coat:a",
+  "en:rechargeable-hand-warmers:a",
+  "en:pet-hair-removal:a",
+  "en:christmas-gifts-for-pets:a",
+  "en:heated-pet-bed:a",
+  "en:advent-calendar-for-pets:a",
+  "en:light-up-collar-night-walks:a",
+  "en:dog-enrichment-toys-rainy-days:a",
+  "en:dog-paw-cleaner-muddy-walks:a"
+ ],
+ "weeks": {
+  "2026-11-07": [
+   "fr:bottes-chien-hiver:b",
+   "fr:manteau-chien-hiver:b",
+   "fr:chauffe-mains-rechargeables:b",
+   "fr:poils-animaux-maison:b",
+   "fr:cadeaux-noel-animaux:b",
+   "fr:coussin-chauffant-chat-chien:b",
+   "fr:calendrier-avent-chien-chat:b",
+   "en:dog-boots-winter:b",
+   "en:dog-winter-coat:b",
+   "en:rechargeable-hand-warmers:b",
+   "en:pet-hair-removal:b",
+   "en:christmas-gifts-for-pets:b",
+   "en:heated-pet-bed:b",
+   "en:advent-calendar-for-pets:b"
+  ]
+ }
+}

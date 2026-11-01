@@ -122,3 +122,20 @@ class PolishSiteTest(unittest.TestCase):
         self.assertEqual(aliexpress_url("dog boots", "", "1"), "https://pl.aliexpress.com/w/wholesale-dog-boots.html")
         u = aliexpress_url("dog boots", "123", "3138840")
         self.assertTrue(u.startswith("https://www.awin1.com/cread.php?awinmid=123&awinaffid=3138840&ued=https%3A%2F%2Fpl.aliexpress.com"))
+
+
+class PinPlanTest(unittest.TestCase):
+    def test_one_pin_per_day_and_no_repeat(self):
+        from datetime import date
+        from unittest import mock
+        from pattes import pinplan
+        guides = {"fr": [{"slug": f"g{i}", "date": f"2026-10-{10+i}"} for i in range(5)], "en": []}
+        store = {"done": ["fr:g0:a"], "weeks": {}}
+        with mock.patch.object(pinplan, "load", lambda: store), mock.patch.object(pinplan, "save", lambda p: None):
+            key, items = pinplan.week_plan(guides, date(2026, 11, 2))
+            self.assertEqual(key, "2026-11-07")
+            self.assertEqual([d for *_, d in items], [f"2026-11-{d:02d}" for d in range(8, 15)])
+            self.assertEqual(items[0][1]["slug"], "g4")  # le guide le plus récent d'abord
+            _, nxt = pinplan.week_plan(guides, date(2026, 11, 8))
+            first = {(g["slug"], v) for _, g, v, _ in items}
+            self.assertFalse(first & {(g["slug"], v) for _, g, v, _ in nxt})
