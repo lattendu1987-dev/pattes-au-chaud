@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-10-30"
+updated = "2026-11-03"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -320,4 +320,39 @@ picks = [
 ]
 faq = [
   { q = "Should I use soap?", a = "Lukewarm water is usually enough. If you use a product, pick one made for dogs and rinse well." },
+]
+
+[[guide]]
+slug = "cat-tree-indoor-winter"
+date = "2026-11-03"
+icon = "🐈"
+title = "Cat tree: how to choose one for an indoor cat in winter"
+description = "Height, stability, scratching posts, cozy hideaways: what makes a cat tree your cat will actually use when it goes out less."
+intro = "In winter, many cats go outside less and spend their days indoors. A good cat tree gives them somewhere to climb, scratch, watch and nap, and spares your couch at the same time."
+sections = [
+  { h = "What to look for", bullets = [
+      "Stability: a wide, heavy base, or a wall anchor for tall models. A wobbly tree won't get used.",
+      "The right height: cats love a high lookout, but tall models must be secured.",
+      "Natural sisal scratching posts, tall enough for a full stretch.",
+      "Wide platforms and an enclosed hideaway for quiet naps.",
+      "Washable covering or removable cushions.",
+  ] },
+  { h = "Matching your cat", bullets = [
+      "Kittens and senior cats: low, closely spaced steps.",
+      "Large cats (like Maine Coons): wide platforms and thick posts.",
+      "Several cats: multiple beds and levels to avoid squabbles.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Put it near a window: watching outside is many cats' favorite pastime.",
+      "Rub a little catnip on the posts to encourage use.",
+      "Check screws and anchors regularly.",
+  ] },
+]
+picks = [
+  { label = "Sturdy cat trees", why = "To climb, scratch and nap.", query = "sturdy cat tree tall" },
+  { label = "Cat trees for large cats", why = "Wide platforms, thick posts.", query = "cat tree for large cats maine coon" },
+  { label = "Sisal scratching posts", why = "A simple, compact extra.", query = "sisal cat scratching post" },
+]
+faq = [
+  { q = "My cat ignores it. What should I do?", a = "Move it (near a window or a favorite spot), add a little catnip and play with your cat around the tree." },
 ]

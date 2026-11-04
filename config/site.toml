@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-10-30"
+updated = "2026-11-03"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -340,4 +340,39 @@ picks = [
 ]
 faq = [
   { q = "Faut-il utiliser du savon ?", a = "En général, de l'eau tiède suffit. Si vous utilisez un produit, choisissez-en un prévu pour les chiens et rincez bien." },
+]
+
+[[guide]]
+slug = "arbre-a-chat-hiver"
+date = "2026-11-03"
+icon = "🐈"
+title = "Arbre à chat : bien le choisir pour un chat qui reste à l'intérieur l'hiver"
+description = "Hauteur, stabilité, griffoirs, niches : les critères pour un arbre à chat qui occupe vraiment votre chat quand il sort moins."
+intro = "En hiver, beaucoup de chats sortent moins et passent leurs journées à l'intérieur. Un bon arbre à chat leur offre de quoi grimper, griffer, observer et dormir au chaud, et protège au passage votre canapé."
+sections = [
+  { h = "Les critères qui comptent", bullets = [
+      "Stabilité : une base large et lourde, ou une fixation murale pour les modèles hauts. Un arbre qui vacille ne sera pas utilisé.",
+      "Hauteur adaptée : les chats aiment observer d'en haut, mais un modèle très haut doit être bien fixé.",
+      "Griffoirs en sisal naturel, assez hauts pour que le chat s'étire de tout son long.",
+      "Plateformes larges et une niche fermée pour les siestes au calme.",
+      "Revêtement lavable ou coussins amovibles.",
+  ] },
+  { h = "Selon votre chat", bullets = [
+      "Chaton ou chat âgé : des marches basses et rapprochées.",
+      "Grand chat (type Maine Coon) : plateformes larges et poteaux épais.",
+      "Plusieurs chats : plusieurs couchages et niveaux, pour éviter les disputes.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Placez-le près d'une fenêtre : regarder dehors est l'activité préférée de beaucoup de chats.",
+      "Frottez un peu d'herbe à chat sur les griffoirs pour l'inciter à l'utiliser.",
+      "Vérifiez régulièrement les vis et les fixations.",
+  ] },
+]
+picks = [
+  { label = "Arbres à chat stables", why = "Pour grimper, griffer et dormir.", query = "arbre à chat stable grand" },
+  { label = "Arbres à chat pour grands chats", why = "Plateformes larges, poteaux épais.", query = "arbre à chat grand chat maine coon" },
+  { label = "Griffoirs en sisal", why = "Un complément simple et peu encombrant.", query = "griffoir sisal chat" },
+]
+faq = [
+  { q = "Mon chat ne l'utilise pas, que faire ?", a = "Changez-le de place (près d'une fenêtre ou de son coin préféré), ajoutez un peu d'herbe à chat et jouez avec lui autour de l'arbre." },
 ]

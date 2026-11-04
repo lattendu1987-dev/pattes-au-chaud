@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-10-30"
+updated = "2026-11-03"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -313,4 +313,38 @@ picks = [
 ]
 faq = [
   { q = "Czy trzeba używać mydła?", a = "Zwykle wystarczy letnia woda. Jeśli używasz środka, wybierz przeznaczony dla psów i dobrze spłucz." },
+]
+
+[[guide]]
+slug = "drapak-dla-kota-zima"
+icon = "🐈"
+title = "Drapak dla kota: jak wybrać dobry dla kota, który zimą zostaje w domu"
+description = "Wysokość, stabilność, słupki do drapania, budki: co sprawia, że kot naprawdę korzysta z drapaka, gdy rzadziej wychodzi."
+intro = "Zimą wiele kotów rzadziej wychodzi i spędza dni w domu. Dobry drapak daje im miejsce do wspinania, drapania, obserwowania i drzemki, a przy okazji chroni kanapę."
+sections = [
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Stabilność: szeroka, ciężka podstawa lub mocowanie do ściany przy wysokich modelach.",
+      "Odpowiednia wysokość: koty lubią patrzeć z góry, ale wysoki drapak musi być dobrze zamocowany.",
+      "Słupki z naturalnego sizalu, na tyle wysokie, by kot mógł się przeciągnąć.",
+      "Szerokie półki i zamknięta budka na spokojne drzemki.",
+      "Pokrycie do prania lub zdejmowane poduszki.",
+  ] },
+  { h = "Dopasowanie do kota", bullets = [
+      "Kocięta i starsze koty: niskie, gęsto rozmieszczone stopnie.",
+      "Duże koty (np. Maine Coon): szerokie półki i grube słupki.",
+      "Kilka kotów: kilka legowisk i poziomów, by uniknąć sporów.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Postaw go przy oknie: obserwowanie świata to ulubione zajęcie wielu kotów.",
+      "Natrzyj słupki odrobiną kocimiętki.",
+      "Regularnie sprawdzaj śruby i mocowania.",
+  ] },
+]
+picks = [
+  { label = "Stabilne drapaki", why = "Do wspinania, drapania i drzemek.", query = "sturdy cat tree" },
+  { label = "Drapaki dla dużych kotów", why = "Szerokie półki, grube słupki.", query = "cat tree large cats" },
+  { label = "Słupki sizalowe", why = "Prosty i mały dodatek.", query = "sisal scratching post" },
+]
+faq = [
+  { q = "Kot nie korzysta z drapaka. Co robić?", a = "Przestaw go (przy oknie lub w ulubionym miejscu kota), dodaj kocimiętki i baw się z kotem wokół drapaka." },
 ]
