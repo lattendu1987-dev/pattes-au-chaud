@@ -80,3 +80,13 @@ if __name__ == "__main__":
 # Couleurs des variantes B et C (tools/make_variants.py) : foncé, accent, clair, doux.
 PALETTE = ("#14243a", "#b4532a", "#f7f4ee", "#f2b48f")
 BRAND_ICON = "🐾"
+
+# QR codes des liens importants (tools/make_qr.py) : (fichier, titre, adresse).
+QR_LINKS = [
+    ("site", "Pattes au chaud", "https://lattendu1987-dev.github.io/pattes-au-chaud/"),
+    ("site-en", "Warm Paws (English)", "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"),
+    ("site-pl", "Ciepłe Łapki (Polski)", "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"),
+    ("instagram", "Instagram Pattes au chaud", "https://www.instagram.com/pattesauchaud.fr/"),
+    ("pinterest", "Pinterest Pattes au chaud", "https://www.pinterest.com/lattendu1987pattes/"),
+    ("kit", "Kit de partage (privé)", "https://lattendu1987-dev.github.io/pattes-au-chaud/kit-partage.html"),
+]
