@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-03"
+updated = "2026-11-06"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -375,4 +375,38 @@ picks = [
 ]
 faq = [
   { q = "Mon chat ne l'utilise pas, que faire ?", a = "Changez-le de place (près d'une fenêtre ou de son coin préféré), ajoutez un peu d'herbe à chat et jouez avec lui autour de l'arbre." },
+]
+
+[[guide]]
+slug = "gamelle-anti-glouton-chien-chat"
+date = "2026-11-06"
+icon = "🥣"
+title = "Gamelle anti-glouton : ralentir un chien ou un chat qui mange trop vite"
+description = "Labyrinthe, tapis de léchage, distributeur : les critères pour choisir une gamelle qui fait manger plus lentement."
+intro = "Certains chiens et chats avalent leur repas en quelques secondes. Une gamelle anti-glouton transforme le repas en petit jeu et le fait durer plus longtemps, ce qui occupe aussi l'animal les jours où il sort moins."
+sections = [
+  { h = "Les grands types", bullets = [
+      "Gamelle labyrinthe : des reliefs obligent l'animal à chercher ses croquettes.",
+      "Tapis de léchage : idéal pour la pâtée, à étaler finement.",
+      "Gamelle à étages ou puzzle : pour les animaux qui ont vite compris le labyrinthe.",
+  ] },
+  { h = "Les critères qui comptent", bullets = [
+      "Une taille adaptée au museau : un chien au museau court a besoin de reliefs peu profonds.",
+      "Une base antidérapante ou des ventouses, pour qu'elle ne glisse pas.",
+      "Un matériau facile à laver, idéalement compatible lave-vaisselle.",
+      "Un niveau de difficulté progressif : commencez facile.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Gardez la même quantité de nourriture qu'avant.",
+      "Restez à côté les premières fois et rangez la gamelle si elle s'abîme.",
+      "Si votre animal mange toujours très vite ou semble gêné, demandez conseil à votre vétérinaire.",
+  ] },
+]
+picks = [
+  { label = "Gamelles anti-glouton pour chien", why = "Le repas dure plus longtemps.", query = "gamelle anti glouton chien" },
+  { label = "Gamelles anti-glouton pour chat", why = "Adaptées aux petits museaux.", query = "gamelle anti glouton chat" },
+  { label = "Tapis de léchage", why = "Parfaits pour la pâtée.", query = "tapis de léchage chien chat" },
+]
+faq = [
+  { q = "Mon animal s'énerve, que faire ?", a = "Prenez un modèle plus facile au début, ou mettez une partie de la ration dans la gamelle classique le temps qu'il s'habitue." },
 ]

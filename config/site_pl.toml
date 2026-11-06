@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-03"
+updated = "2026-11-06"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -347,4 +347,37 @@ picks = [
 ]
 faq = [
   { q = "Kot nie korzysta z drapaka. Co robić?", a = "Przestaw go (przy oknie lub w ulubionym miejscu kota), dodaj kocimiętki i baw się z kotem wokół drapaka." },
+]
+
+[[guide]]
+slug = "miska-spowalniajaca-dla-psa-kota"
+icon = "🥣"
+title = "Miska spowalniająca: jak spowolnić psa lub kota, który je za szybko"
+description = "Labirynt, mata do lizania, miska-łamigłówka: na co zwrócić uwagę przy wyborze miski, która wydłuża posiłek."
+intro = "Niektóre psy i koty zjadają posiłek w kilka sekund. Miska spowalniająca zamienia jedzenie w małą zabawę i wydłuża je, a przy okazji zajmuje zwierzę w dni, gdy mniej wychodzi."
+sections = [
+  { h = "Główne rodzaje", bullets = [
+      "Miska-labirynt: wypustki zmuszają zwierzę do szukania karmy.",
+      "Mata do lizania: idealna do mokrej karmy rozsmarowanej cienko.",
+      "Miska-łamigłówka lub wielopoziomowa: dla zwierząt, które szybko opanowały labirynt.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Kształt dopasowany do pyska: zwierzęta z krótkim pyskiem potrzebują płytkich wypustek.",
+      "Antypoślizgowy spód lub przyssawki.",
+      "Materiał łatwy do mycia, najlepiej do zmywarki.",
+      "Stopniowy poziom trudności: zacznij od łatwego.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Podawaj tę samą ilość karmy co wcześniej.",
+      "Bądź w pobliżu na początku i schowaj miskę, jeśli się zniszczy.",
+      "Jeśli zwierzę nadal je bardzo szybko lub wydaje się zaniepokojone, zapytaj weterynarza.",
+  ] },
+]
+picks = [
+  { label = "Miski spowalniające dla psa", why = "Posiłek trwa dłużej.", query = "slow feeder dog bowl" },
+  { label = "Miski spowalniające dla kota", why = "Dla małych pyszczków.", query = "slow feeder cat bowl" },
+  { label = "Maty do lizania", why = "Świetne do mokrej karmy.", query = "lick mat pet" },
+]
+faq = [
+  { q = "Zwierzę się denerwuje. Co robić?", a = "Wybierz na początku łatwiejszy model albo podawaj część posiłku w zwykłej misce, aż się przyzwyczai." },
 ]

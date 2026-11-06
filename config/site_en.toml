@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-03"
+updated = "2026-11-06"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -355,4 +355,38 @@ picks = [
 ]
 faq = [
   { q = "My cat ignores it. What should I do?", a = "Move it (near a window or a favorite spot), add a little catnip and play with your cat around the tree." },
+]
+
+[[guide]]
+slug = "slow-feeder-bowl-dog-cat"
+date = "2026-11-06"
+icon = "🥣"
+title = "Slow feeder bowl: how to slow down a dog or cat that eats too fast"
+description = "Maze bowls, lick mats, puzzle feeders: what to look for in a bowl that makes mealtime last longer."
+intro = "Some dogs and cats finish their meal in seconds. A slow feeder turns mealtime into a small game and makes it last longer, which also keeps pets busy on days they go out less."
+sections = [
+  { h = "Main types", bullets = [
+      "Maze bowl: ridges make your pet search for each bite of kibble.",
+      "Lick mat: ideal for wet food spread thinly.",
+      "Puzzle or multi-level feeder: for pets that quickly figured out the maze.",
+  ] },
+  { h = "What to look for", bullets = [
+      "A shape matched to the snout: flat-faced pets need shallow ridges.",
+      "A non-slip base or suction cups so it stays put.",
+      "Easy-to-clean material, ideally dishwasher-safe.",
+      "Gradual difficulty: start easy.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Keep the same amount of food as before.",
+      "Stay nearby at first and put the bowl away if it gets damaged.",
+      "If your pet still eats very fast or seems uncomfortable, ask your vet.",
+  ] },
+]
+picks = [
+  { label = "Slow feeder bowls for dogs", why = "Meals last longer.", query = "slow feeder dog bowl" },
+  { label = "Slow feeder bowls for cats", why = "Made for small snouts.", query = "slow feeder cat bowl" },
+  { label = "Lick mats", why = "Great for wet food.", query = "lick mat for dogs and cats" },
+]
+faq = [
+  { q = "My pet gets frustrated. What now?", a = "Pick an easier model at first, or put part of the meal in a regular bowl while your pet gets used to it." },
 ]

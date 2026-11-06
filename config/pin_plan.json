@@ -23,20 +23,20 @@
  ],
  "weeks": {
   "2026-11-07": [
+   "fr:gamelle-anti-glouton-chien-chat:a",
    "fr:arbre-a-chat-hiver:a",
    "fr:bottes-chien-hiver:b",
    "fr:manteau-chien-hiver:b",
    "fr:chauffe-mains-rechargeables:b",
    "fr:poils-animaux-maison:b",
    "fr:cadeaux-noel-animaux:b",
-   "fr:coussin-chauffant-chat-chien:b",
+   "en:slow-feeder-bowl-dog-cat:a",
    "en:cat-tree-indoor-winter:a",
    "en:dog-boots-winter:b",
    "en:dog-winter-coat:b",
    "en:rechargeable-hand-warmers:b",
    "en:pet-hair-removal:b",
-   "en:christmas-gifts-for-pets:b",
-   "en:heated-pet-bed:b"
+   "en:christmas-gifts-for-pets:b"
   ]
  }
 }
