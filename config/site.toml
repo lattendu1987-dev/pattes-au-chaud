@@ -381,6 +381,8 @@ faq = [
 
 [[guide]]
 slug = "gamelle-anti-glouton-chien-chat"
+# Image Pinterest personnalisée (fournie par le propriétaire) : ne pas régénérer.
+image_perso = true
 date = "2026-11-06"
 icon = "🥣"
 title = "Gamelle anti-glouton : ralentir un chien ou un chat qui mange trop vite"
