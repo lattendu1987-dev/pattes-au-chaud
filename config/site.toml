@@ -344,6 +344,8 @@ faq = [
 
 [[guide]]
 slug = "arbre-a-chat-hiver"
+# Images Pinterest personnalisées (principale et B) : ne pas régénérer.
+image_perso = true
 date = "2026-11-03"
 icon = "🐈"
 title = "Arbre à chat : bien le choisir pour un chat qui reste à l'intérieur l'hiver"
