@@ -144,6 +144,8 @@ faq = [
 
 [[guide]]
 slug = "cadeaux-noel-animaux"
+# Image(s) Pinterest personnalisée(s) : ne pas régénérer.
+image_perso = true
 date = "2026-10-20"
 icon = "🎁"
 title = "Idées-cadeaux de Noël pour les animaux et leurs humains"
@@ -169,6 +171,8 @@ faq = [
 
 [[guide]]
 slug = "coussin-chauffant-chat-chien"
+# Image(s) Pinterest personnalisée(s) : ne pas régénérer.
+image_perso = true
 date = "2026-10-20"
 icon = "🛏️"
 title = "Coussin chauffant pour chat ou chien : bien choisir et l'utiliser sans risque"
@@ -309,6 +313,8 @@ faq = [
 
 [[guide]]
 slug = "nettoyer-pattes-chien-boue"
+# Image(s) Pinterest personnalisée(s) : ne pas régénérer.
+image_perso = true
 date = "2026-10-30"
 icon = "🛁"
 title = "Pattes boueuses : les accessoires pour garder la maison propre après la balade"
