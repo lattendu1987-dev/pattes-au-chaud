@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-06"
+updated = "2026-11-10"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -389,4 +389,38 @@ picks = [
 ]
 faq = [
   { q = "My pet gets frustrated. What now?", a = "Pick an easier model at first, or put part of the meal in a regular bowl while your pet gets used to it." },
+]
+
+[[guide]]
+slug = "cozy-pet-bed-winter"
+date = "2026-11-10"
+icon = "🛋️"
+title = "Cozy pet bed: how to choose the right winter bed for your dog or cat"
+description = "Raised sides, thick base, washable cover, size: what makes a bed that keeps your pet warm and out of drafts."
+intro = "In winter, cold floors and drafts can make some beds uncomfortable. A good bed insulates from the floor, has sides to curl up against and is easy to wash."
+sections = [
+  { h = "What to look for", bullets = [
+      "A thick, insulating base so the cold floor doesn't come through.",
+      "Raised sides or a donut shape for curling up.",
+      "A removable, machine-washable cover.",
+      "A non-slip or waterproof bottom.",
+  ] },
+  { h = "Getting the size right", bullets = [
+      "Measure your pet curled up and stretched out, then add a few inches.",
+      "Cats often like enclosed or igloo-style beds.",
+      "Large or senior dogs appreciate a firm, easy-access mattress.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Keep the bed away from drafty doors and windows.",
+      "Don't push it against a radiator: your pet should be able to move away from the heat.",
+      "Wash the cover regularly.",
+  ] },
+]
+picks = [
+  { label = "Fluffy donut beds", why = "For curling up warm.", query = "donut pet bed fluffy" },
+  { label = "Igloo cat beds", why = "A cozy, enclosed hideaway.", query = "igloo cat bed" },
+  { label = "Thick beds for large dogs", why = "Firm and easy to get into.", query = "large dog bed washable cover" },
+]
+faq = [
+  { q = "Round or rectangular?", a = "Pets that sleep curled up often prefer round beds with raised sides; those that stretch out like a rectangular mattress." },
 ]

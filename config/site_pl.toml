@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-06"
+updated = "2026-11-10"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -380,4 +380,37 @@ picks = [
 ]
 faq = [
   { q = "Zwierzę się denerwuje. Co robić?", a = "Wybierz na początku łatwiejszy model albo podawaj część posiłku w zwykłej misce, aż się przyzwyczai." },
+]
+
+[[guide]]
+slug = "legowisko-dla-psa-kota-zima"
+icon = "🛋️"
+title = "Przytulne legowisko: jak wybrać zimowe posłanie dla psa lub kota"
+description = "Wysokie boki, gruby spód, zdejmowany pokrowiec, rozmiar: co sprawia, że legowisko chroni zwierzę przed zimnem i przeciągami."
+intro = "Zimą zimna podłoga i przeciągi sprawiają, że niektóre posłania są niewygodne. Dobre legowisko izoluje od podłogi, ma boki, do których można się przytulić, i łatwo się je pierze."
+sections = [
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Gruby, izolujący spód, żeby nie czuć zimna płytek.",
+      "Wysokie boki lub kształt „donut”, by zwierzę mogło się zwinąć.",
+      "Zdejmowany pokrowiec do prania w pralce.",
+      "Antypoślizgowy lub wodoodporny spód.",
+  ] },
+  { h = "Dobór rozmiaru", bullets = [
+      "Zmierz zwierzę zwinięte w kłębek i wyciągnięte, a potem dodaj kilka centymetrów.",
+      "Koty często lubią zamknięte legowiska lub budki-igloo.",
+      "Duże lub starsze psy docenią twardy materac z łatwym dostępem.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Stawiaj legowisko z dala od drzwi i okien, przez które wieje zimne powietrze.",
+      "Nie dosuwaj go do kaloryfera: zwierzę musi mieć możliwość odsunięcia się od ciepła.",
+      "Regularnie pierz pokrowiec.",
+  ] },
+]
+picks = [
+  { label = "Puszyste legowiska donut", why = "Do ciepłego zwijania się.", query = "donut pet bed" },
+  { label = "Legowiska igloo dla kota", why = "Zamknięta, przytulna kryjówka.", query = "igloo cat bed" },
+  { label = "Grube legowiska dla dużych psów", why = "Twarde i łatwo dostępne.", query = "large dog bed" },
+]
+faq = [
+  { q = "Okrągłe czy prostokątne?", a = "Zwierzęta śpiące w kłębek często wolą okrągłe legowiska z wysokimi bokami; te, które się wyciągają, lubią prostokątny materac." },
 ]

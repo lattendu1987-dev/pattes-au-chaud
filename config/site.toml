@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-06"
+updated = "2026-11-10"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -419,4 +419,38 @@ picks = [
 ]
 faq = [
   { q = "Mon animal s'énerve, que faire ?", a = "Prenez un modèle plus facile au début, ou mettez une partie de la ration dans la gamelle classique le temps qu'il s'habitue." },
+]
+
+[[guide]]
+slug = "panier-chien-chat-hiver"
+date = "2026-11-10"
+icon = "🛋️"
+title = "Panier douillet : bien choisir le couchage de son chien ou de son chat pour l'hiver"
+description = "Bords hauts, fond épais, housse lavable, taille : les critères pour un panier qui garde votre animal au chaud et à l'abri des courants d'air."
+intro = "En hiver, le sol froid et les courants d'air rendent certains couchages peu confortables. Un bon panier isole du sol, offre des bords pour se blottir et se lave facilement."
+sections = [
+  { h = "Les critères qui comptent", bullets = [
+      "Un fond épais et isolant, pour ne pas sentir le froid du carrelage.",
+      "Des bords hauts ou un modèle « donut » pour que l'animal puisse se blottir.",
+      "Une housse déhoussable et lavable en machine.",
+      "Un dessous antidérapant ou imperméable.",
+  ] },
+  { h = "Choisir la bonne taille", bullets = [
+      "Mesurez votre animal couché en boule et étiré, puis ajoutez quelques centimètres.",
+      "Les chats aiment souvent les paniers fermés ou en igloo.",
+      "Les grands chiens ou les chiens âgés apprécient un matelas ferme et facile d'accès.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Placez le panier loin des portes et des fenêtres qui laissent passer l'air froid.",
+      "Évitez de le coller à un radiateur : l'animal doit pouvoir s'éloigner de la chaleur.",
+      "Lavez la housse régulièrement.",
+  ] },
+]
+picks = [
+  { label = "Paniers donut moelleux", why = "Pour se blottir au chaud.", query = "panier donut chien chat moelleux" },
+  { label = "Paniers igloo pour chat", why = "Un abri fermé et rassurant.", query = "panier igloo chat" },
+  { label = "Matelas épais pour grand chien", why = "Ferme et facile d'accès.", query = "matelas chien grand déhoussable" },
+]
+faq = [
+  { q = "Rond ou rectangulaire ?", a = "Les animaux qui dorment en boule préfèrent souvent les paniers ronds à bords hauts ; ceux qui s'étirent apprécient un matelas rectangulaire." },
 ]
