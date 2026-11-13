@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-10"
+updated = "2026-11-13"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -423,4 +423,39 @@ picks = [
 ]
 faq = [
   { q = "Round or rectangular?", a = "Pets that sleep curled up often prefer round beds with raised sides; those that stretch out like a rectangular mattress." },
+]
+
+[[guide]]
+slug = "dog-sweater-winter"
+date = "2026-11-13"
+icon = "🧶"
+title = "Dog sweater: how to choose one for small dogs that feel the cold"
+description = "Material, fit, collar, ease of putting on: what makes a comfortable sweater your dog will actually wear."
+intro = "A sweater can help small dogs, short-haired breeds and seniors handle the cold, both at home and on dry winter walks. As long as it fits well and feels nice to wear."
+sections = [
+  { h = "Sweater or coat?", bullets = [
+      "Sweater: soft and warm, ideal at home or in cold, dry weather.",
+      "Coat: waterproof, better for rain and snow.",
+      "Many owners keep both to match the weather.",
+  ] },
+  { h = "What to look for", bullets = [
+      "Soft material: fleece or thick knit, nothing scratchy.",
+      "The right fit: measure back length, chest and neck.",
+      "A turtleneck or high collar to protect the neck.",
+      "A harness opening if you walk your dog on a harness.",
+      "Machine washable.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Get your dog used to it gradually, with treats.",
+      "Take it off indoors if it's warm or your dog is panting.",
+      "Check it doesn't restrict the legs or get in the way of potty breaks.",
+  ] },
+]
+picks = [
+  { label = "Sweaters for small dogs", why = "Soft and warm for chilly pups.", query = "small dog sweater winter" },
+  { label = "Turtleneck dog sweaters", why = "Covers the neck too.", query = "turtleneck dog sweater" },
+  { label = "Fleece dog pullovers", why = "Light and easy to wash.", query = "fleece dog pullover" },
+]
+faq = [
+  { q = "Can my dog wear it all day?", a = "Better to take it off indoors when it's warm, so your dog doesn't overheat." },
 ]

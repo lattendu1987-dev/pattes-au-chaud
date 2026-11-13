@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-10"
+updated = "2026-11-13"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -413,4 +413,38 @@ picks = [
 ]
 faq = [
   { q = "Okrągłe czy prostokątne?", a = "Zwierzęta śpiące w kłębek często wolą okrągłe legowiska z wysokimi bokami; te, które się wyciągają, lubią prostokątny materac." },
+]
+
+[[guide]]
+slug = "sweter-dla-psa-zima"
+icon = "🧶"
+title = "Sweter dla psa: jak wybrać dobry dla małego zmarzlucha"
+description = "Materiał, rozmiar, golf, łatwe zakładanie: co sprawia, że sweter jest wygodny i pies naprawdę chce go nosić."
+intro = "Sweter może pomóc małym psom, rasom krótkowłosym i seniorom lepiej znosić chłód, w domu i na suchych zimowych spacerach. Pod warunkiem, że ma dobry rozmiar i jest przyjemny w noszeniu."
+sections = [
+  { h = "Sweter czy kurtka?", bullets = [
+      "Sweter: miękki i ciepły, idealny w domu lub przy suchym mrozie.",
+      "Kurtka: wodoodporna, lepsza na deszcz i śnieg.",
+      "Wielu opiekunów ma jedno i drugie, zależnie od pogody.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Miękki materiał: polar lub gruba dzianina, bez drapiących nitek.",
+      "Dobry rozmiar: zmierz długość grzbietu, obwód klatki i szyi.",
+      "Golf lub wysoki kołnierz chroniący szyję.",
+      "Otwór na szelki, jeśli spacerujesz z psem w szelkach.",
+      "Możliwość prania w pralce.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Przyzwyczajaj psa stopniowo, z nagrodami.",
+      "Zdejmuj sweter w domu, gdy jest ciepło lub pies dyszy.",
+      "Sprawdź, czy nie krępuje łap i nie przeszkadza w załatwianiu potrzeb.",
+  ] },
+]
+picks = [
+  { label = "Swetry dla małych psów", why = "Miękkie i ciepłe dla zmarzluchów.", query = "small dog sweater" },
+  { label = "Swetry z golfem", why = "Chronią też szyję.", query = "turtleneck dog sweater" },
+  { label = "Polary dla psa", why = "Lekkie i łatwe w praniu.", query = "fleece dog pullover" },
+]
+faq = [
+  { q = "Czy pies może nosić sweter cały dzień?", a = "Lepiej zdejmować go w domu, gdy jest ciepło, żeby pies się nie przegrzał." },
 ]

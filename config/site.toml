@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-10"
+updated = "2026-11-13"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -453,4 +453,39 @@ picks = [
 ]
 faq = [
   { q = "Rond ou rectangulaire ?", a = "Les animaux qui dorment en boule préfèrent souvent les paniers ronds à bords hauts ; ceux qui s'étirent apprécient un matelas rectangulaire." },
+]
+
+[[guide]]
+slug = "pull-chien-hiver"
+date = "2026-11-13"
+icon = "🧶"
+title = "Pull pour chien : bien le choisir pour les petits chiens frileux"
+description = "Matière, taille, col, facilité d'enfilage : les critères pour un pull confortable que votre chien supportera vraiment."
+intro = "Un pull peut aider les petits chiens, les chiens à poil ras et les seniors à mieux supporter le froid, à la maison comme en balade par temps sec. À condition qu'il soit à la bonne taille et agréable à porter."
+sections = [
+  { h = "Pull ou manteau ?", bullets = [
+      "Pull : doux et chaud, idéal à la maison ou par temps froid et sec.",
+      "Manteau : imperméable, mieux adapté à la pluie et à la neige.",
+      "Beaucoup de propriétaires ont les deux pour s'adapter à la météo.",
+  ] },
+  { h = "Les critères qui comptent", bullets = [
+      "Une matière douce : polaire ou maille épaisse, sans fils qui grattent.",
+      "La bonne taille : mesurez la longueur du dos, le tour de poitrail et le tour de cou.",
+      "Un col roulé ou montant pour protéger le cou.",
+      "Une ouverture pour le harnais si vous promenez votre chien au harnais.",
+      "Lavable en machine.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Habituez votre chien progressivement, avec des friandises.",
+      "Retirez le pull à l'intérieur s'il fait chaud ou si votre chien halète.",
+      "Vérifiez qu'il ne gêne ni les pattes ni les besoins.",
+  ] },
+]
+picks = [
+  { label = "Pulls pour petit chien", why = "Doux et chauds pour les frileux.", query = "pull chien petite taille hiver" },
+  { label = "Pulls col roulé", why = "Pour protéger aussi le cou.", query = "pull col roulé chien" },
+  { label = "Polaires pour chien", why = "Légères et faciles à laver.", query = "polaire chien" },
+]
+faq = [
+  { q = "Mon chien peut-il le garder toute la journée ?", a = "Mieux vaut le retirer à l'intérieur quand il fait bon, pour éviter qu'il ait trop chaud." },
 ]
