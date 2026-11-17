@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-13"
+updated = "2026-11-17"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -447,4 +447,38 @@ picks = [
 ]
 faq = [
   { q = "Czy pies może nosić sweter cały dzień?", a = "Lepiej zdejmować go w domu, gdy jest ciepło, żeby pies się nie przegrzał." },
+]
+
+[[guide]]
+slug = "fontanna-dla-kota"
+icon = "💧"
+title = "Fontanna dla kota: jak ją wybrać i łatwo utrzymać w czystości"
+description = "Rozmiar, hałas, filtr, materiał, czyszczenie: co sprawia, że kot naprawdę korzysta z fontanny."
+intro = "Wiele kotów woli pić bieżącą wodę. Fontanna może zachęcić je do częstszego picia, zwłaszcza zimą, gdy ogrzewanie wysusza powietrze. Musi być jednak cicha i łatwa do czyszczenia."
+sections = [
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Cicha praca: głośna pompa może przestraszyć kota.",
+      "Pojemność dopasowana do liczby zwierząt.",
+      "Materiał łatwy do mycia: stal nierdzewna, ceramika lub plastik bez BPA.",
+      "Filtry łatwe do kupienia i wymiany.",
+      "Automatyczne wyłączanie przy niskim poziomie wody.",
+  ] },
+  { h = "Czyszczenie", bullets = [
+      "Regularnie wymieniaj wodę, nawet jeśli fontanna filtruje.",
+      "Myj fontannę i pompę zgodnie z zaleceniami producenta.",
+      "Wymieniaj filtr zgodnie z harmonogramem.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Stawiaj ją z dala od miski z jedzeniem i kuwety.",
+      "Zostaw starą miskę z wodą na kilka dni, aż kot się przyzwyczai.",
+      "Poprowadź kabel poza zasięgiem pazurów i zębów.",
+  ] },
+]
+picks = [
+  { label = "Ciche fontanny dla kota", why = "Bieżąca woda bez hałasu.", query = "quiet cat water fountain" },
+  { label = "Fontanny ze stali nierdzewnej", why = "Łatwe w myciu.", query = "stainless steel cat fountain" },
+  { label = "Filtry zapasowe", why = "Wymieniaj regularnie.", query = "cat fountain filters" },
+]
+faq = [
+  { q = "Kot nie korzysta z fontanny. Co robić?", a = "Zostaw obok starą miskę na kilka dni, spróbuj innego miejsca i sprawdź, czy fontanna nie jest zbyt głośna." },
 ]

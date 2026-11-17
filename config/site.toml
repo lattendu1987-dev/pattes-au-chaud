@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-13"
+updated = "2026-11-17"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -488,4 +488,39 @@ picks = [
 ]
 faq = [
   { q = "Mon chien peut-il le garder toute la journée ?", a = "Mieux vaut le retirer à l'intérieur quand il fait bon, pour éviter qu'il ait trop chaud." },
+]
+
+[[guide]]
+slug = "fontaine-eau-chat"
+date = "2026-11-17"
+icon = "💧"
+title = "Fontaine à eau pour chat : bien la choisir et l'entretenir facilement"
+description = "Taille, bruit, filtre, matériau, nettoyage : les critères pour choisir une fontaine que votre chat utilisera vraiment."
+intro = "Beaucoup de chats préfèrent boire une eau qui coule. Une fontaine peut les encourager à venir boire plus souvent, surtout en hiver quand le chauffage assèche l'air. Encore faut-il la choisir silencieuse et simple à nettoyer."
+sections = [
+  { h = "Les critères qui comptent", bullets = [
+      "Un fonctionnement silencieux : une pompe bruyante peut effrayer le chat.",
+      "Une capacité adaptée au nombre d'animaux.",
+      "Un matériau facile à laver : inox ou céramique, ou plastique sans BPA.",
+      "Des filtres faciles à trouver et à changer.",
+      "Une coupure automatique quand le réservoir est presque vide.",
+  ] },
+  { h = "Entretien", bullets = [
+      "Changez l'eau régulièrement, même si la fontaine filtre.",
+      "Lavez la fontaine et la pompe selon les consignes du fabricant.",
+      "Remplacez le filtre au rythme indiqué.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Placez-la loin de la gamelle de nourriture et de la litière.",
+      "Gardez l'ancien bol d'eau quelques jours, le temps que le chat s'habitue.",
+      "Faites passer le câble hors de portée des griffes et des dents.",
+  ] },
+]
+picks = [
+  { label = "Fontaines silencieuses pour chat", why = "Une eau qui coule, sans bruit.", query = "fontaine à eau chat silencieuse" },
+  { label = "Fontaines en inox", why = "Faciles à laver.", query = "fontaine eau chat inox" },
+  { label = "Filtres de rechange", why = "À changer régulièrement.", query = "filtre fontaine chat" },
+]
+faq = [
+  { q = "Mon chat ne l'utilise pas, que faire ?", a = "Laissez l'ancien bol à côté quelques jours, essayez un autre emplacement et vérifiez que la fontaine n'est pas trop bruyante." },
 ]

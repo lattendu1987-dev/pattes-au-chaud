@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-13"
+updated = "2026-11-17"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -458,4 +458,39 @@ picks = [
 ]
 faq = [
   { q = "Can my dog wear it all day?", a = "Better to take it off indoors when it's warm, so your dog doesn't overheat." },
+]
+
+[[guide]]
+slug = "cat-water-fountain"
+date = "2026-11-17"
+icon = "💧"
+title = "Cat water fountain: how to choose one and keep it clean easily"
+description = "Size, noise, filter, material, cleaning: what makes a fountain your cat will actually use."
+intro = "Many cats prefer drinking running water. A fountain can encourage them to drink more often, especially in winter when heating dries the air. It just needs to be quiet and easy to clean."
+sections = [
+  { h = "What to look for", bullets = [
+      "Quiet operation: a noisy pump can scare your cat.",
+      "A capacity that matches the number of pets.",
+      "Easy-to-wash material: stainless steel, ceramic or BPA-free plastic.",
+      "Filters that are easy to find and replace.",
+      "Automatic shut-off when the water runs low.",
+  ] },
+  { h = "Cleaning", bullets = [
+      "Change the water regularly, even though it filters.",
+      "Wash the fountain and pump as the maker recommends.",
+      "Replace the filter on schedule.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Keep it away from the food bowl and litter box.",
+      "Leave the old water bowl out for a few days while your cat adjusts.",
+      "Route the cord out of reach of claws and teeth.",
+  ] },
+]
+picks = [
+  { label = "Quiet cat fountains", why = "Running water, no noise.", query = "quiet cat water fountain" },
+  { label = "Stainless steel fountains", why = "Easy to wash.", query = "stainless steel cat water fountain" },
+  { label = "Replacement filters", why = "Change them regularly.", query = "cat fountain replacement filters" },
+]
+faq = [
+  { q = "My cat won't use it. What now?", a = "Keep the old bowl next to it for a few days, try another spot and check the fountain isn't too noisy." },
 ]
