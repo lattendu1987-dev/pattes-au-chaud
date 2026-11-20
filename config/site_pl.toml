@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-17"
+updated = "2026-11-20"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -481,4 +481,37 @@ picks = [
 ]
 faq = [
   { q = "Kot nie korzysta z fontanny. Co robić?", a = "Zostaw obok starą miskę na kilka dni, spróbuj innego miejsca i sprawdź, czy fontanna nie jest zbyt głośna." },
+]
+
+[[guide]]
+slug = "choinka-a-kot-i-pies"
+icon = "🎄"
+title = "Choinka a zwierzęta: akcesoria, dzięki którym choinka przetrwa kota i psa"
+description = "Ciężki stojak, barierka, nietłukące się ozdoby: na co zwrócić uwagę, by cieszyć się choinką bez stłuczek i strachu."
+intro = "Dla kota choinka to drzewko do wspinania pełne błyszczących zabawek. Dla psa przeszkoda na drodze merdającego ogona. Kilka dobrze dobranych akcesoriów pozwala cieszyć się świętami bez szkód."
+sections = [
+  { h = "Stabilna choinka", bullets = [
+      "Ciężki, szeroki stojak lub choinka przymocowana dyskretnie do ściany lub sufitu.",
+      "Mniejsza choinka na stoliku lub komodzie bywa prostsza przy kocie, który lubi się wspinać.",
+      "Ozdobna barierka lub kojec wokół stojaka dla psów i szczeniąt.",
+  ] },
+  { h = "Odpowiednie ozdoby", bullets = [
+      "Nietłukące się bombki (plastikowe lub materiałowe) zamiast szklanych.",
+      "Nic jadalnego ani małego na dolnych gałęziach.",
+      "Unikaj łańcuchów z frędzlami, które koty uwielbiają gryźć.",
+      "Lampki z dobrze zamocowanym kablem, wyłączane, gdy wychodzisz.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Postaw choinkę kilka dni przed ubieraniem, żeby zwierzę się przyzwyczaiło.",
+      "Przykryj pojemnik z wodą żywej choinki, żeby zwierzę z niego nie piło.",
+      "Postaw obok zabawkę lub drapak, by odwrócić uwagę.",
+  ] },
+]
+picks = [
+  { label = "Nietłukące się bombki", why = "Nic się nie stłucze, gdy spadną.", query = "shatterproof christmas ornaments" },
+  { label = "Ciężkie stojaki na choinkę", why = "Żeby choinka się nie przewróciła.", query = "heavy christmas tree stand" },
+  { label = "Barierki dla zwierząt", why = "Do ochrony stojaka.", query = "indoor pet playpen" },
+]
+faq = [
+  { q = "Żywa czy sztuczna choinka?", a = "Obie się sprawdzą. Przy żywej przykryj pojemnik z wodą i regularnie zamiataj igły." },
 ]

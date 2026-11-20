@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-17"
+updated = "2026-11-20"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -523,4 +523,38 @@ picks = [
 ]
 faq = [
   { q = "Mon chat ne l'utilise pas, que faire ?", a = "Laissez l'ancien bol à côté quelques jours, essayez un autre emplacement et vérifiez que la fontaine n'est pas trop bruyante." },
+]
+
+[[guide]]
+slug = "sapin-noel-chat-chien"
+date = "2026-11-20"
+icon = "🎄"
+title = "Sapin de Noël et animaux : les accessoires pour un sapin à l'épreuve du chat et du chien"
+description = "Pied lourd, barrière, décorations incassables : les critères pour profiter du sapin sans casse ni frayeur avec un chat ou un chien curieux."
+intro = "Pour un chat, un sapin, c'est un arbre à grimper plein de jouets qui brillent. Pour un chien, une queue qui balaie les boules. Avec quelques accessoires bien choisis, on profite des fêtes sans casse."
+sections = [
+  { h = "Un sapin stable", bullets = [
+      "Un pied lourd et large, ou un sapin fixé au mur ou au plafond avec une attache discrète.",
+      "Un sapin plus petit posé sur une table ou un meuble peut être plus simple avec un chat très grimpeur.",
+      "Une barrière décorative ou un parc autour du pied pour les chiens et les chiots.",
+  ] },
+  { h = "Des décorations adaptées", bullets = [
+      "Des boules incassables (plastique ou tissu) plutôt qu'en verre.",
+      "Rien de comestible ni de petit sur les branches basses.",
+      "Évitez les guirlandes à franges que les chats adorent mâchouiller.",
+      "Des guirlandes lumineuses avec câble bien fixé, débranchées quand vous êtes absent.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Installez le sapin quelques jours avant les décorations pour que l'animal s'y habitue.",
+      "Couvrez la réserve d'eau d'un sapin naturel pour que l'animal ne la boive pas.",
+      "Proposez un jouet ou un griffoir à côté pour détourner son attention.",
+  ] },
+]
+picks = [
+  { label = "Boules de Noël incassables", why = "Rien ne se brise si elles tombent.", query = "boules de noel incassables" },
+  { label = "Pieds de sapin lourds et stables", why = "Pour éviter que le sapin bascule.", query = "pied sapin de noel stable lourd" },
+  { label = "Barrières pour animaux", why = "Pour protéger le pied du sapin.", query = "barrière parc chien intérieur" },
+]
+faq = [
+  { q = "Sapin naturel ou artificiel ?", a = "Les deux sont possibles. Avec un sapin naturel, couvrez la réserve d'eau et ramassez les aiguilles régulièrement." },
 ]

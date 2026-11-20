@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-17"
+updated = "2026-11-20"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -493,4 +493,38 @@ picks = [
 ]
 faq = [
   { q = "My cat won't use it. What now?", a = "Keep the old bowl next to it for a few days, try another spot and check the fountain isn't too noisy." },
+]
+
+[[guide]]
+slug = "pet-proof-christmas-tree"
+date = "2026-11-20"
+icon = "🎄"
+title = "Christmas tree and pets: the gear for a cat- and dog-proof tree"
+description = "Heavy stand, pet gate, shatterproof ornaments: what to look for to enjoy the tree without breakage or scares."
+intro = "To a cat, a Christmas tree is a climbing frame covered in shiny toys. To a dog, it's in the path of a wagging tail. With a few well-chosen items, you can enjoy the holidays without breakage."
+sections = [
+  { h = "A stable tree", bullets = [
+      "A heavy, wide stand, or a tree anchored to the wall or ceiling with a discreet tie.",
+      "A smaller tree on a table or sideboard can be easier with a keen climber.",
+      "A decorative gate or playpen around the base for dogs and puppies.",
+  ] },
+  { h = "Pet-friendly decorations", bullets = [
+      "Shatterproof ornaments (plastic or fabric) instead of glass.",
+      "Nothing edible or small on the lower branches.",
+      "Skip tinsel, which cats love to chew.",
+      "String lights with well-secured cords, unplugged when you're out.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Put the tree up a few days before decorating so your pet gets used to it.",
+      "Cover the water reservoir of a real tree so pets can't drink from it.",
+      "Offer a toy or scratching post nearby as a distraction.",
+  ] },
+]
+picks = [
+  { label = "Shatterproof ornaments", why = "Nothing breaks if they fall.", query = "shatterproof christmas ornaments" },
+  { label = "Heavy, stable tree stands", why = "Keeps the tree from tipping.", query = "heavy duty christmas tree stand" },
+  { label = "Pet gates and playpens", why = "To protect the base of the tree.", query = "indoor pet playpen gate" },
+]
+faq = [
+  { q = "Real or artificial tree?", a = "Both work. With a real tree, cover the water reservoir and sweep up needles regularly." },
 ]
