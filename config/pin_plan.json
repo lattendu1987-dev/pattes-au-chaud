@@ -69,6 +69,22 @@
    "en:cozy-pet-bed-winter:b",
    "en:dog-sweater-winter:b",
    "en:cat-water-fountain:b"
+  ],
+  "2026-11-28": [
+   "fr:transport-chien-chat-voiture-fetes:a",
+   "fr:sapin-noel-chat-chien:b",
+   "fr:transport-chien-chat-voiture-fetes:b",
+   "fr:bottes-chien-hiver:c",
+   "fr:manteau-chien-hiver:c",
+   "fr:chauffe-mains-rechargeables:c",
+   "fr:poils-animaux-maison:c",
+   "en:pet-car-travel-holidays:a",
+   "en:pet-proof-christmas-tree:b",
+   "en:pet-car-travel-holidays:b",
+   "en:dog-boots-winter:c",
+   "en:dog-winter-coat:c",
+   "en:rechargeable-hand-warmers:c",
+   "en:pet-hair-removal:c"
   ]
  }
 }

@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-20"
+updated = "2026-11-24"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -557,4 +557,37 @@ picks = [
 ]
 faq = [
   { q = "Sapin naturel ou artificiel ?", a = "Les deux sont possibles. Avec un sapin naturel, couvrez la réserve d'eau et ramassez les aiguilles régulièrement." },
+]
+
+[[guide]]
+slug = "transport-chien-chat-voiture-fetes"
+date = "2026-11-24"
+icon = "🚗"
+title = "Voyager en voiture avec son animal pour les fêtes : les accessoires indispensables"
+description = "Caisse de transport, harnais de sécurité, housse de siège : les critères pour emmener son chien ou son chat en voiture en toute sécurité."
+intro = "Pendant les fêtes, beaucoup d'animaux voyagent pour aller en famille. En voiture, un animal doit être attaché ou transporté dans une caisse : c'est plus sûr pour lui et pour les passagers."
+sections = [
+  { h = "Les accessoires selon l'animal", bullets = [
+      "Chat ou petit chien : une caisse de transport rigide et bien ventilée, calée au sol ou attachée avec la ceinture.",
+      "Chien moyen ou grand : un harnais de sécurité relié à la ceinture, ou une cage dans le coffre.",
+      "Une housse de siège ou de coffre imperméable pour protéger la voiture.",
+  ] },
+  { h = "Les critères qui comptent", bullets = [
+      "Une taille adaptée : l'animal doit pouvoir se tenir debout et se retourner dans sa caisse.",
+      "Un harnais de sécurité testé pour la voiture, pas un simple harnais de promenade.",
+      "Une fermeture solide et une poignée confortable pour la caisse.",
+  ] },
+  { h = "Bonnes pratiques", bullets = [
+      "Habituez votre animal à sa caisse quelques jours avant le départ, avec une couverture qui sent la maison.",
+      "Faites une pause toutes les deux heures environ pour un chien, avec de l'eau.",
+      "Ne laissez jamais un animal seul dans une voiture.",
+  ] },
+]
+picks = [
+  { label = "Caisses de transport pour chat", why = "Rigides et bien ventilées.", query = "caisse de transport chat rigide" },
+  { label = "Harnais de sécurité voiture pour chien", why = "Relié à la ceinture de sécurité.", query = "harnais sécurité voiture chien" },
+  { label = "Housses de siège pour chien", why = "Protège la voiture des poils et de la boue.", query = "housse siège voiture chien imperméable" },
+]
+faq = [
+  { q = "Mon chat déteste sa caisse, que faire ?", a = "Laissez-la ouverte dans la maison quelques jours avant, avec une couverture et des friandises, pour qu'elle devienne un endroit familier." },
 ]

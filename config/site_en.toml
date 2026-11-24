@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-20"
+updated = "2026-11-24"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -527,4 +527,37 @@ picks = [
 ]
 faq = [
   { q = "Real or artificial tree?", a = "Both work. With a real tree, cover the water reservoir and sweep up needles regularly." },
+]
+
+[[guide]]
+slug = "pet-car-travel-holidays"
+date = "2026-11-24"
+icon = "🚗"
+title = "Holiday road trips with pets: the car travel essentials"
+description = "Carriers, car safety harnesses, seat covers: what to look for to take your dog or cat in the car safely."
+intro = "During the holidays, lots of pets travel to visit family. In the car, a pet should be secured or in a carrier: it's safer for them and for everyone on board."
+sections = [
+  { h = "Gear by pet", bullets = [
+      "Cat or small dog: a sturdy, well-ventilated carrier, wedged on the floor or secured with the seat belt.",
+      "Medium or large dog: a car safety harness clipped to the seat belt, or a crate in the trunk.",
+      "A waterproof seat or trunk cover to protect the car.",
+  ] },
+  { h = "What to look for", bullets = [
+      "The right size: your pet should be able to stand and turn around in the carrier.",
+      "A harness designed and tested for car travel, not just a walking harness.",
+      "A secure latch and comfortable handle on the carrier.",
+  ] },
+  { h = "Good habits", bullets = [
+      "Get your pet used to the carrier a few days ahead, with a blanket that smells like home.",
+      "Stop roughly every two hours for dogs, with water.",
+      "Never leave a pet alone in a car.",
+  ] },
+]
+picks = [
+  { label = "Cat carriers", why = "Sturdy and well ventilated.", query = "hard sided cat carrier" },
+  { label = "Dog car safety harnesses", why = "Clips to the seat belt.", query = "dog car safety harness" },
+  { label = "Dog seat covers", why = "Protects against hair and mud.", query = "waterproof dog car seat cover" },
+]
+faq = [
+  { q = "My cat hates the carrier. What can I do?", a = "Leave it open at home for a few days beforehand, with a blanket and treats, so it becomes a familiar spot." },
 ]

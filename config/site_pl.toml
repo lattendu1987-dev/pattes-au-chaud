@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-20"
+updated = "2026-11-24"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -514,4 +514,36 @@ picks = [
 ]
 faq = [
   { q = "Żywa czy sztuczna choinka?", a = "Obie się sprawdzą. Przy żywej przykryj pojemnik z wodą i regularnie zamiataj igły." },
+]
+
+[[guide]]
+slug = "podroz-samochodem-z-psem-kotem-swieta"
+icon = "🚗"
+title = "Świąteczna podróż samochodem ze zwierzakiem: niezbędne akcesoria"
+description = "Transporter, szelki samochodowe, pokrowiec na siedzenie: na co zwrócić uwagę, by bezpiecznie wieźć psa lub kota."
+intro = "W święta wiele zwierząt podróżuje do rodziny. W samochodzie zwierzę powinno być przypięte lub przewożone w transporterze: tak jest bezpieczniej dla niego i dla pasażerów."
+sections = [
+  { h = "Akcesoria według zwierzęcia", bullets = [
+      "Kot lub mały pies: sztywny, dobrze wentylowany transporter, ustawiony na podłodze lub przypięty pasem.",
+      "Średni lub duży pies: szelki samochodowe przypięte do pasa albo klatka w bagażniku.",
+      "Wodoodporny pokrowiec na siedzenie lub bagażnik.",
+  ] },
+  { h = "Na co zwrócić uwagę", bullets = [
+      "Odpowiedni rozmiar: zwierzę musi móc stanąć i się obrócić w transporterze.",
+      "Szelki przeznaczone i testowane do jazdy samochodem, nie zwykłe szelki spacerowe.",
+      "Solidne zamknięcie i wygodny uchwyt transportera.",
+  ] },
+  { h = "Dobre nawyki", bullets = [
+      "Przyzwyczajaj zwierzę do transportera kilka dni wcześniej, z kocykiem pachnącym domem.",
+      "Z psem rób przerwę mniej więcej co dwie godziny, z wodą.",
+      "Nigdy nie zostawiaj zwierzęcia samego w samochodzie.",
+  ] },
+]
+picks = [
+  { label = "Transportery dla kota", why = "Sztywne i dobrze wentylowane.", query = "hard sided cat carrier" },
+  { label = "Szelki samochodowe dla psa", why = "Przypinane do pasa.", query = "dog car safety harness" },
+  { label = "Pokrowce na siedzenie dla psa", why = "Chronią przed sierścią i błotem.", query = "dog car seat cover" },
+]
+faq = [
+  { q = "Kot nie znosi transportera. Co robić?", a = "Zostaw go otwartego w domu na kilka dni przed podróżą, z kocykiem i smakołykami, żeby stał się znajomym miejscem." },
 ]
