@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/pl/"
 # Identyfikator programu AliExpress PL w Awin (awinmid). Puste = linki bez prowizji.
 awin_mid = "12044"
 awin_affid = "3138840"
-updated = "2026-11-24"
+updated = "2026-11-27"
 
 [[guide]]
 slug = "buty-dla-psa-zima"
@@ -546,4 +546,39 @@ picks = [
 ]
 faq = [
   { q = "Kot nie znosi transportera. Co robić?", a = "Zostaw go otwartego w domu na kilka dni przed podróżą, z kocykiem i smakołykami, żeby stał się znajomym miejscem." },
+]
+
+[[guide]]
+slug = "skarpeta-swiateczna-dla-psa-kota"
+icon = "🧦"
+title = "Świąteczna skarpeta dla psa lub kota: co do niej włożyć"
+description = "Zabawki, smakołyki, akcesoria: nasze pomysły i zasady, by bezpiecznie wypełnić świąteczną skarpetę zwierzaka."
+intro = "Świąteczna skarpeta dla zwierzaka stała się w wielu domach małą tradycją. Żeby sprawiła radość, wybieraj prezenty dopasowane do wielkości, wieku i zwyczajów zwierzęcia."
+sections = [
+  { h = "Pomysły dla psa", bullets = [
+      "Wytrzymały gryzak dopasowany do siły szczęki.",
+      "Zabawka na smakołyki lub mała mata węchowa.",
+      "Piłka lub sznur do wspólnej zabawy.",
+      "Kilka dobrych smakołyków, w małej ilości.",
+  ] },
+  { h = "Pomysły dla kota", bullets = [
+      "Wędka z piórkami do wspólnej zabawy.",
+      "Lekkie piłeczki lub materiałowe myszki.",
+      "Mały drapak lub poduszka z kocimiętką.",
+      "Kilka smakołyków dla kotów.",
+  ] },
+  { h = "Zasady bezpieczeństwa", bullets = [
+      "Rozmiar zabawki dopasowany do zwierzęcia, by uniknąć zadławienia.",
+      "Nie zostawiaj wstążek, sznurków ani papieru w zasięgu.",
+      "Nadzoruj pierwsze zabawy nową zabawką.",
+      "Smakołyki wliczają się do dziennej racji.",
+  ] },
+]
+picks = [
+  { label = "Gryzaki dla psa", why = "Wytrzymałe i dopasowane.", query = "durable dog chew toy" },
+  { label = "Wędki dla kota", why = "Do wspólnej zabawy.", query = "cat feather wand toy" },
+  { label = "Świąteczne skarpety dla zwierząt", why = "Dla tradycji.", query = "pet christmas stocking" },
+]
+faq = [
+  { q = "Czy można dać zwierzęciu świąteczne smakołyki dla ludzi?", a = "Nie: czekolada i wiele świątecznych potraw nie jest odpowiednich dla zwierząt. Wybieraj smakołyki przeznaczone dla nich." },
 ]

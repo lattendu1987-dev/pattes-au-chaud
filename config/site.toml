@@ -11,7 +11,7 @@ tagline = "Guides d'achat pour bien équiper vos animaux, surtout quand il fait 
 base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/"
 # Identifiant Partenaires Amazon.fr (ex. "pattesauchaud-21"). Vide = liens sans commission.
 amazon_tag = "pattesauchaud-21"
-updated = "2026-11-24"
+updated = "2026-11-27"
 
 [[guide]]
 slug = "bottes-chien-hiver"
@@ -590,4 +590,40 @@ picks = [
 ]
 faq = [
   { q = "Mon chat déteste sa caisse, que faire ?", a = "Laissez-la ouverte dans la maison quelques jours avant, avec une couverture et des friandises, pour qu'elle devienne un endroit familier." },
+]
+
+[[guide]]
+slug = "bas-de-noel-chien-chat"
+date = "2026-11-27"
+icon = "🧦"
+title = "Bas de Noël pour chien ou chat : quoi mettre dedans pour lui faire plaisir"
+description = "Jouets, friandises, accessoires : nos idées et les critères pour remplir le bas de Noël de votre animal en toute sécurité."
+intro = "Le bas de Noël de l'animal est devenu une petite tradition dans beaucoup de familles. Pour qu'il fasse vraiment plaisir, on choisit des cadeaux adaptés à sa taille, à son âge et à ses habitudes."
+sections = [
+  { h = "Idées pour un chien", bullets = [
+      "Un jouet à mâcher solide, adapté à la force de sa mâchoire.",
+      "Un jouet distributeur de friandises ou un petit tapis de fouille.",
+      "Une balle ou une corde pour jouer ensemble.",
+      "Quelques friandises de qualité, en petite quantité.",
+  ] },
+  { h = "Idées pour un chat", bullets = [
+      "Une canne à pêche avec plumes pour jouer avec lui.",
+      "Des balles légères ou des souris en tissu.",
+      "Un petit griffoir ou un coussin à l'herbe à chat.",
+      "Quelques friandises adaptées aux chats.",
+  ] },
+  { h = "Les règles de sécurité", bullets = [
+      "Une taille de jouet adaptée pour éviter les risques d'étouffement.",
+      "Pas de ruban, de ficelle ou de papier cadeau laissé à portée.",
+      "Surveillez les premières utilisations d'un nouveau jouet.",
+      "Les friandises comptent dans la ration du jour.",
+  ] },
+]
+picks = [
+  { label = "Jouets à mâcher pour chien", why = "Solides et adaptés à sa taille.", query = "jouet à mâcher chien solide" },
+  { label = "Jouets canne à pêche pour chat", why = "Pour jouer ensemble.", query = "canne à pêche jouet chat plumes" },
+  { label = "Bas de Noël pour animaux", why = "Pour la petite tradition.", query = "chaussette de noël chien chat" },
+]
+faq = [
+  { q = "Peut-on offrir des friandises de Noël humaines ?", a = "Non : le chocolat et beaucoup d'aliments de fête ne conviennent pas aux animaux. Choisissez des friandises prévues pour eux." },
 ]

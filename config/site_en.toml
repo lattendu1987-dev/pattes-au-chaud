@@ -8,7 +8,7 @@ base_url = "https://lattendu1987-dev.github.io/pattes-au-chaud/en/"
 # Amazon.com Associates tracking ID (e.g. "warmpaws-20"). Empty = links without commission.
 amazon_tag = "warmpaws-20"
 amazon_domain = "www.amazon.com"
-updated = "2026-11-24"
+updated = "2026-11-27"
 
 [[guide]]
 slug = "dog-boots-winter"
@@ -560,4 +560,40 @@ picks = [
 ]
 faq = [
   { q = "My cat hates the carrier. What can I do?", a = "Leave it open at home for a few days beforehand, with a blanket and treats, so it becomes a familiar spot." },
+]
+
+[[guide]]
+slug = "christmas-stocking-for-pets"
+date = "2026-11-27"
+icon = "🧦"
+title = "Christmas stocking for dogs and cats: what to put inside"
+description = "Toys, treats, accessories: our ideas and the criteria to fill your pet's Christmas stocking safely."
+intro = "A pet's Christmas stocking has become a little tradition in many homes. To make it a hit, pick gifts that suit your pet's size, age and habits."
+sections = [
+  { h = "Ideas for dogs", bullets = [
+      "A sturdy chew toy matched to jaw strength.",
+      "A treat-dispensing toy or small snuffle mat.",
+      "A ball or rope toy to play together.",
+      "A few quality treats, in small amounts.",
+  ] },
+  { h = "Ideas for cats", bullets = [
+      "A feather wand toy to play together.",
+      "Light balls or fabric mice.",
+      "A small scratcher or catnip pillow.",
+      "A few cat-safe treats.",
+  ] },
+  { h = "Safety rules", bullets = [
+      "Toy size matched to your pet to avoid choking hazards.",
+      "No ribbon, string or wrapping paper left within reach.",
+      "Supervise the first uses of a new toy.",
+      "Treats count toward the day's food.",
+  ] },
+]
+picks = [
+  { label = "Dog chew toys", why = "Sturdy and size-appropriate.", query = "durable dog chew toy" },
+  { label = "Cat wand toys", why = "To play together.", query = "cat feather wand toy" },
+  { label = "Pet Christmas stockings", why = "For the tradition.", query = "pet christmas stocking" },
+]
+faq = [
+  { q = "Can I give my pet holiday treats meant for people?", a = "No: chocolate and many holiday foods aren't safe for pets. Pick treats made for them." },
 ]
